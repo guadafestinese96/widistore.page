@@ -34,8 +34,9 @@ header nav img {
     width: 100%
 }
 
-#navBar ul li a:hover{
-    color: #ffffff; /*LE CAMBIO EL COLOR A LA LETRA CUANDO ME POSICIONO ARRIBA*/
+#navBar ul li a:hover {
+    color: #ffffff;
+    /*LE CAMBIO EL COLOR A LA LETRA CUANDO ME POSICIONO ARRIBA*/
     text-shadow: #000000 5px 5px 5px;
     transition: .5s;
     font-size: 30px;
@@ -56,7 +57,7 @@ header nav ul li a {
     /*-----------color -- derecha -- abajo -- transparencia */
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     transition: .5s;
-    
+
 }
 
 /*------------------------------------------*/
@@ -183,7 +184,7 @@ footer {
     border: #000000 solid 2px;
     font-size: 15px;
     height: 60px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
 
@@ -191,7 +192,7 @@ footer {
     background-color: #ffffff;
     padding: 5px;
     font-size: 15px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .caja {
@@ -305,7 +306,7 @@ footer {
     border: #000000 solid 2px;
     font-size: 15px;
     height: 60px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
 
@@ -313,7 +314,7 @@ footer {
     background-color: #ffffff;
     padding: 5px;
     font-size: 15px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
@@ -453,6 +454,7 @@ footer {
 #mainPickup {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 #mainPickup h1 {
@@ -495,6 +497,7 @@ footer {
 
 .mapas {
     display: flex;
+    justify-content: center;
 }
 
 /*------------- FIN PICKUP-------------------*/
@@ -507,6 +510,7 @@ footer {
 #mainContacto {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 #mainContacto h1 {
@@ -551,6 +555,7 @@ footer {
     padding: 20px;
     border: #000000 solid 2px;
     margin: 20px;
+
 }
 
 #formContacto {
@@ -574,12 +579,14 @@ footer {
     flex-direction: column;
 }
 
-.datosPersonales label {
+/* .datosPersonales label {
     justify-content: center;
     align-items: center;
     text-align: center;
     margin: 2px;
-}
+} */
+
+
 
 
 .datosPersonales input {
@@ -587,7 +594,8 @@ footer {
     padding: 5px;
 }
 
-.inputNombre, .inputApellido {
+.inputNombre,
+.inputApellido {
     width: 180px;
 }
 
@@ -596,11 +604,17 @@ footer {
 }
 
 .textoConsulta {
-    width: 800px;
+    width: 700px;
     padding: 30px;
     justify-content: center;
     align-items: center;
-    
+    display: flex;
+    flex-direction: column;
+
+}
+
+.write {
+    padding: 10px;
 }
 
 .textoConsulta textarea {
@@ -610,17 +624,18 @@ footer {
     font-size: 15px;
 }
 
-.textoConsulta label {
+/* .textoConsulta label {
     display: flex;
     justify-content: center;
     align-items: top;
     justify-content: space-between;
-}
+} 
 
 .labelConsulta {
     padding: 10px;
     width: 680px;
 }
+*/
 
 .botones {
     text-align: right;
@@ -673,6 +688,7 @@ footer {
     /*STOCK FEMENINO*/
     #mainStockFemenino {
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     #mainStockFemenino H1 {
@@ -683,6 +699,7 @@ footer {
         display: flex;
         flex-wrap: wrap;
         width: 100vw;
+        justify-content: center;
     }
 
     /*STOCK MASCULINO*/
@@ -698,6 +715,7 @@ footer {
         display: flex;
         flex-wrap: wrap;
         width: 100vw;
+        justify-content: center;
     }
 
     /*ENVIOS*/
@@ -708,8 +726,9 @@ footer {
 
     #vehiculos {
         flex-wrap: wrap;
-
     }
+
+
 
     #vehiculos h2 {
         font-size: 15px;
@@ -740,6 +759,10 @@ footer {
         width: 350px;
     }
 
+    .mapas {
+        flex-wrap: wrap;
+    }
+
     /*CONTACTO*/
     .redesSociales {
         flex-wrap: wrap;
@@ -757,13 +780,14 @@ footer {
         width: 100px;
         height: 100px;
     }
- 
+
 
     /*-----FORM----*/
 
     #formContacto {
         width: 500px;
-       
+        justify-content: center;
+
     }
 
     .datosPersonales {
@@ -773,20 +797,143 @@ footer {
     .textoConsulta {
         width: 400px;
         justify-content: center;
-        
+
     }
 
-    .textoConsulta label {
-        flex-direction: column;
+    .textareaText textarea {
+        width: 350px;
     }
 
-    .labelConsulta {
-        width: 400px;
-    }
 
-    .botones input{
+    .botones input {
         font-size: 10px;
     }
+}
+
+
+@media (max-width: 320px) {
+
+    /*ENCABEZADO*/
+    #navBar ul li a {
+        font-size: 10px;
+        margin-top: 10px;
+        padding-top: 10px;
+    }
+
+    #navBar ul li a:hover {
+        font-size: 15x;
+    }
+
+    /*TITULOS INICIO*/
+    .banner_titulo h2 {
+        font-size: 20px;
+        width: 200px;
+    }
+
+    .banner_titulo h3 {
+        font-size: 10px;
+        width: 200px;
+    }
+
+    /*ENVIOS*/
+    .viaCargo img,
+    .moto img {
+        width: 300px;
+        height: 180px;
+    }
+
+    .moto h2,
+    .viaCargo h2 {
+        font-size: 10px;
+        width: 250px;
+    }
+
+    /*PICKUP*/
+
+    .mapas {
+        flex-wrap: wrap;
+        width: 300px;
+        font-size: 10px;
+    }
+
+    /*CONTACTO*/
+
+
+    #mainContacto h1 {
+        font-size: 20px;
+    }
+
+    #mainContacto h2 {
+        font-size: 15px;
+        width: 250px;
+    }
+
+    .redesSociales img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .redesSociales {
+        font-size: 10px;
+        width: 250px;
+    }
+
+
+    /*-----FORM----*/
+
+    #formContacto {
+        width: 300px;
+        justify-content: center;
+
+    }
+
+    .inputEmail,
+    .inputNombre,
+    .inputApellido {
+        width: 210px;
+        height: 40px;
+    }
+
+    .nombre,
+    .apellido,
+    .email {
+        height: 50px;
+    }
+
+    .cajaMsj {
+        height: 500px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+
+
+    .textoConsulta {
+        width: 230px;
+        font-size: 10px;
+        height: 100px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+
+    }
+
+    .textareaText textarea {
+        width: 200px;
+        height: 100px;
+    }
+
+    /*FOOTER*/
+    #redes img {
+        width: 30px;
+        height: 30px;
+        margin: 5px;
+    }
+
 }
 
 /*
@@ -802,4 +949,3 @@ link rel="stylesheet" href:"https://cdnjs.cloudflare.com/ajax/libs/imagehover.cs
 
 Uso boostrap solo si necesito algo que no tenga que modificar, puedo implementar solo un boton en el trabajo pre entregable.
 */
-
