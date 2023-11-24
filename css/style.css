@@ -820,6 +820,7 @@ footer {
         padding-top: 10px;
     }
 
+
     #navBar ul li a:hover {
         font-size: 15x;
     }
@@ -838,22 +839,37 @@ footer {
     /*ENVIOS*/
     .viaCargo img,
     .moto img {
-        width: 300px;
-        height: 180px;
+        width: 200px;
+        height: 120px;
+
+    }
+
+    #vehiculos h2 {
+        font-size: 10px;
     }
 
     .moto h2,
     .viaCargo h2 {
-        font-size: 10px;
-        width: 250px;
+        width: 200px;
     }
+
+
 
     /*PICKUP*/
 
     .mapas {
         flex-wrap: wrap;
-        width: 300px;
+        width: 250px;
         font-size: 10px;
+        justify-content: center;
+    }
+
+    .card .ubi {
+        justify-content: center;
+    }
+
+    .mapas img {
+        width: 200px;
     }
 
     /*CONTACTO*/
@@ -882,7 +898,7 @@ footer {
     /*-----FORM----*/
 
     #formContacto {
-        width: 300px;
+        width: 250px;
         justify-content: center;
 
     }
@@ -890,7 +906,7 @@ footer {
     .inputEmail,
     .inputNombre,
     .inputApellido {
-        width: 210px;
+        width: 180px;
         height: 40px;
     }
 
@@ -909,11 +925,8 @@ footer {
 
     }
 
-
-
-
     .textoConsulta {
-        width: 230px;
+        width: 180px;
         font-size: 10px;
         height: 100px;
         justify-content: center;
@@ -922,9 +935,28 @@ footer {
 
     }
 
-    .textareaText textarea {
+    .write {
         width: 200px;
+    }
+
+    .write h2 {
+        font-size: 5px;
+        width: 180px;
+    }
+
+    .textareaText textarea {
+        width: 160px;
         height: 100px;
+    }
+
+
+
+    #formContacto h2 {
+        font-size: 10px;
+        text-align: center;
+        width: 180px;
+        align-items: center;
+        justify-content: center;
     }
 
     /*FOOTER*/
