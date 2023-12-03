@@ -1,0 +1,137 @@
+/*--------------CONTACTO--------------------------------------------------------------*/
+
+#mainContacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+        font-size: 50px;
+        margin: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    #formContacto {
+        display: flex;
+        width: 800px;
+        flex-direction: column;
+        font-size: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+
+        .redesSociales {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+
+            p {
+                background-color: #ff13a7;
+                border: #000000 solid 2px;
+                padding: 10px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-weight: bold;
+                height: 60px;
+                border-radius: 40px;
+
+            }
+
+            img {
+                width: 200px;
+                height: 200px;
+                border-radius: 100%;
+                margin: 10px;
+            }
+
+            .wp,
+            .ig {
+                width: 400px;
+                margin: 20px;
+            }
+        }
+    }
+}
+
+
+
+.cajaMsj {
+    background-color: #ff13a7;
+    padding: 20px;
+    border: #000000 solid 2px;
+    margin: 20px;
+
+    .datosPersonales {
+        height: 100px;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+
+        .nombre {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input {
+            height: 40px;
+            padding: 5px;
+        }
+
+        .inputNombre,
+        .inputApellido {
+            width: 180px;
+        }
+
+        .inputEmail {
+            width: 280px;
+        }
+
+        .textoConsulta {
+            width: 700px;
+            padding: 30px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+
+            textarea {
+                margin-left: 20px;
+                resize: none;
+                padding: 10px;
+                font-size: 15px;
+            }
+
+
+        }
+
+        .write {
+            padding: 10px;
+        }
+
+    }
+
+    .botones {
+        text-align: right;
+        margin-right: 25px;
+
+        input {
+            font-size: 20px;
+            padding: 10px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        input:hover {
+            background-color: #000000;
+            color: #ffffff;
+        }
+
+    }
+
+   
+
+}
+
+
+
+
+
+/*--------------FIN CONTACTO-----------*/

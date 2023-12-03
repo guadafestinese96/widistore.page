@@ -1,0 +1,119 @@
+
+/*-----------------STOCK MASCULINO--------------------*/
+#mainStockMasculino {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h1 {
+        margin-top: 20px;
+        font-size: 50px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+}
+
+
+
+#tablaStockMasculino {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    grid-template-areas:
+        "pacoRabanne dior calvinKlein azzaro ch kenzo"
+        "mugler miyake creed tommy tomFord dolceGabbana"
+        "versace armani ralphLauren bvlgary vacio vacio"
+    ;
+    margin: 20px;
+
+    .tablaStockMasculino_h2 {
+        background-color: #ff13a7;
+        padding: 5px;
+        border: #000000 solid 2px;
+        font-size: 15px;
+        height: 60px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    }
+    
+    .tablaStockMasculino_h3 {
+        background-color: #ffffff;
+        padding: 5px;
+        font-size: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+}
+
+
+
+
+
+/*AREAS DEL GRID*/
+.pacoRabanne {
+    grid-area: pacoRabanne;
+}
+
+.dior {
+    grid-area: dior;
+}
+
+.calvinKlein {
+    grid-area: calvinKlein;
+}
+
+.azzaro {
+    grid-area: azzaro;
+}
+
+.ch {
+    grid-area: ch;
+}
+
+.kenzo {
+    grid-area: kenzo;
+}
+
+.mugler {
+    grid-area: mugler;
+}
+
+.miyake {
+    grid-area: miyake;
+}
+
+
+.creed {
+    grid-area: creed;
+}
+
+.tommy {
+    grid-area: tommy;
+}
+
+.tomFord {
+    grid-area: tomFord;
+}
+
+.dolceGabbana {
+    grid-area: dolceGabbana;
+}
+
+.versace {
+    grid-area: versace;
+}
+
+.armani {
+    grid-area: armani;
+}
+
+.ralphLauren {
+    grid-area: ralphLauren;
+}
+
+.bvlgary {
+    grid-area: bvlgary;
+}
+
+/*------------- FIN STOCK MASCULINO-------------------*/

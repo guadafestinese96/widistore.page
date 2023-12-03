@@ -1,0 +1,396 @@
+main {
+
+    min-height: 100vh;
+    /*para que siempre el footer este abajo*/
+    width: 100vw;
+    display: flex;
+    background-color: #000000;
+    background-image: url(../images/fotoperfumes3.jpg);
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+
+
+.banner_titulo h2 {
+    color: #000000;
+    font-size: 60px;
+    text-shadow: #ff13a7 1px 5px 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+
+}
+
+.banner_titulo h3 {
+    color: #ffffff;
+    margin-top: 50px;
+    font-size: 25px;
+    width: 700px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    -webkit-text-stroke: #000000 1px;
+    text-shadow: #ff13a7 1px 5px 10px;
+}
+
+
+
+/*----------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+/*--------------MEDIA QUERIS-------------*/
+
+@media (max-width: 883px) {
+
+    /*ENCABEZADO*/
+    #navBar {
+
+        img {
+            width: 90px;
+            height: 90px;
+        }
+
+        ul li {
+            display: block;
+            text-align: center;
+
+            a {
+                font-size: 15px;
+            }
+        }
+    }
+
+
+    /*TITULOS INICIO*/
+    .banner_titulo {
+
+        h2 {
+            font-size: 40px;
+        }
+
+        h3 {
+            font-size: 17px;
+            width: 400px;
+        }
+    }
+
+
+
+
+    /*STOCK FEMENINO*/
+    #mainStockFemenino {
+        flex-wrap: wrap;
+        justify-content: center;
+
+        h1 {
+            font-size: 30px;
+        }
+    }
+
+    #tablaStockFemenino {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100vw;
+        justify-content: center;
+    }
+
+    /*STOCK MASCULINO*/
+    #mainStockMasculino {
+        flex-wrap: wrap;
+
+        h1 {
+            font-size: 30px;
+        }
+    }
+
+
+    #tablaStockMasculino {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100vw;
+        justify-content: center;
+    }
+
+    /*ENVIOS*/
+    #mainEnvios h1 {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+
+    #vehiculos {
+        flex-wrap: wrap;
+
+        h2 {
+            font-size: 15px;
+            height: 80px;
+        }
+    }
+
+
+    /*PICKUP*/
+    .mainPickup_h1 {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+
+    .mainPickup_mapas {
+        flex-wrap: wrap;
+    }
+
+
+
+    /*CONTACTO*/
+    .redesSociales {
+        flex-wrap: wrap;
+    }
+
+    #mainContacto {
+        h1 {
+            font-size: 30px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+    }
+
+
+    .redesSociales img {
+        width: 100px;
+        height: 100px;
+    }
+
+
+    /*-----FORM----*/
+
+    #formContacto {
+        width: 500px;
+        justify-content: center;
+
+    }
+
+    .datosPersonales {
+        flex-wrap: wrap;
+
+        .textoConsulta {
+            width: 400px;
+            justify-content: center;
+
+        }
+
+        .textareaText textarea {
+            width: 350px;
+        }
+    }
+
+    .botones input {
+        font-size: 10px;
+    }
+
+
+
+
+
+}
+
+
+@media (max-width: 320px) {
+
+    /*ENCABEZADO*/
+    #navBar {
+
+        ul li {
+            a {
+                font-size: 10px;
+                margin-top: 10px;
+                padding-top: 10px;
+            }
+
+            a:hover {
+                font-size: 15x;
+            }
+        }
+
+    }
+
+
+
+    /*TITULOS INICIO*/
+    .banner_titulo {
+
+        h2 {
+            font-size: 20px;
+            width: 200px;
+        }
+
+        h3 {
+            font-size: 10px;
+            width: 200px;
+        }
+    }
+
+    /*ENVIOS*/
+    .viaCargo,
+    .moto {
+        img {
+            width: 200px;
+            height: 120px;
+        }
+
+        h2 {
+            width: 200px;
+        }
+    }
+
+    #vehiculos h2 {
+        font-size: 10px;
+    }
+
+
+
+
+
+    /*PICKUP*/
+
+    .mainPickup_mapas {
+        flex-wrap: wrap;
+        width: 250px;
+        font-size: 10px;
+        justify-content: center;
+    }
+
+    .card .ubi {
+        justify-content: center;
+    }
+
+    .mapas img {
+        width: 200px;
+    }
+
+    /*CONTACTO*/
+
+
+    #mainContacto {
+        h1 {
+            font-size: 20px;
+        }
+
+        h2 {
+            font-size: 15px;
+            width: 250px;
+        }
+    }
+
+
+
+    .redesSociales {
+        font-size: 10px;
+        width: 250px;
+
+        img {
+            width: 70px;
+            height: 70px;
+        }
+    }
+
+
+    /*-----FORM----*/
+
+    #formContacto {
+        width: 250px;
+        justify-content: center;
+
+        h2 {
+            font-size: 10px;
+            text-align: center;
+            width: 180px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .inputEmail,
+        .inputNombre,
+        .inputApellido {
+            width: 180px;
+            height: 40px;
+        }
+
+        .nombre,
+        .apellido,
+        .email {
+            height: 50px;
+        }
+
+        .cajaMsj {
+            height: 500px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .textoConsulta {
+            width: 180px;
+            font-size: 10px;
+            height: 100px;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+
+        }
+
+        .write {
+            width: 200px;
+
+            h2 {
+                font-size: 5px;
+                width: 180px;
+            }
+        }
+
+
+        .textareaText textarea {
+            width: 160px;
+            height: 100px;
+        }
+
+
+    }
+
+
+
+
+
+
+    /*FOOTER*/
+    #redes img {
+        width: 30px;
+        height: 30px;
+        margin: 5px;
+    }
+
+}
+
+/*
+.footerLinks ul li:nth-child(3) a:hover
+--> Entro a la lista de los links y selecciono solo el tercer link para modificarle una propiedad
+
+CDN 
+--> link a boostrap lo copio y lo pego en mi head
+--> del body copio el script de javascript y lo pego en el final mi body. Si lo pego en el head me va a sobrecargar el sitio. Todas las librerias que cargue las tengo que cargar antes de el link a mi hoja de estilos CSS porque sino la pisan.
+
+LIBRERIA HOVER IMG
+link rel="stylesheet" href:"https://cdnjs.cloudflare.com/ajax/libs/imagehover.css/2.0.0/css/imagehover.min.css"
+
+Uso boostrap solo si necesito algo que no tenga que modificar, puedo implementar solo un boton en el trabajo pre entregable.
+*/

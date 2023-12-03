@@ -1,973 +1,741 @@
-/*----------------------HEADER-------------*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    /*scroll-padding-top: 70px;*/
+/*----------------------FOOTER-------------*/
+footer {
+  width: 100vw;
+  background-color: #ff13a7;
+  margin-top: auto;
+  /*NO PONER POSICIONAMIENTO RELATIVO O ABSOLUTO*/
+}
+footer #redes {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+  width: 100vw;
+  position: relative;
+}
+footer #redes .redesBox {
+  display: flex;
+  justify-content: left;
+  margin-left: 10px;
+}
+footer #redes .redesBox img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  margin: 15px;
 }
 
+/*agrego el footer lo enlazo*/
 header {
-    background-color: #ff13a7;
-    height: 150px;
-    width: 100vw;
-    display: flex;
-    position: fixed;
-    justify-content: center;
-    z-index: 100;
-    position: relative;
-}
-
-header nav img {
-    width: 120px;
-    height: 120px;
-    border-radius: 100%;
-    margin: 10px;
-    border: 1px solid #000000;
-    filter: drop-shadow(10px 10px 10px #000000)
+  background-color: #ff13a7;
+  height: 150px;
+  width: 100vw;
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  z-index: 100;
+  position: relative;
 }
 
 #navBar {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
 }
-
-#navBar ul li a:hover {
-    color: #ffffff;
-    /*LE CAMBIO EL COLOR A LA LETRA CUANDO ME POSICIONO ARRIBA*/
-    text-shadow: #000000 5px 5px 5px;
-    transition: .5s;
-    font-size: 30px;
+#navBar img {
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  margin: 10px;
+  border: 1px solid #000000;
+  filter: drop-shadow(10px 10px 10px #000000);
 }
-
 #navBar ul li {
-    display: inline-block;
+  display: inline-block;
 }
-
-
-
-header nav ul li a {
-    font-size: 25px;
-    margin-left: 10px;
-    text-decoration: none;
-    color: #000000;
-    text-shadow: #ffffff 5px 5px 5px;
-    /*-----------color -- derecha -- abajo -- transparencia */
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    transition: .5s;
-
+#navBar ul li a, #navBar ul li li {
+  font-size: 25px;
+  margin-left: 10px;
+  text-decoration: none;
+  color: #000000;
+  text-shadow: #ffffff 5px 5px 5px;
+  /*-----------color -- derecha -- abajo -- transparencia */
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  transition: 0.5s;
+}
+#navBar ul li a:hover, #navBar ul li li:hover {
+  color: #ffffff;
+  /*LE CAMBIO EL COLOR A LA LETRA CUANDO ME POSICIONO ARRIBA*/
+  text-shadow: #000000 5px 5px 5px;
+  transition: 0.5s;
+  font-size: 30px;
 }
 
 /*------------------------------------------*/
-/*------------------------------------------*/
-/*------------------------------------------*/
-
-
-
-/*----------------------BODY-------------*/
-
-
-main {
-
-    min-height: 100vh;
-    /*para que siempre el footer este abajo*/
-    width: 100vw;
-    display: flex;
-    background-color: #000000;
-    background-image: url(../images/fotoperfumes3.jpg);
-    background-size: cover;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+/*Reset CSS*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  /*scroll-padding-top: 70px;*/
 }
 
-
-
-
-
-.banner_titulo h2 {
-    color: #000000;
-    font-size: 60px;
-    text-shadow: #ff13a7 1px 5px 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-
+a, li {
+  display: inline-block;
+  font-style: none;
+  list-style: none;
+  text-decoration: none;
 }
 
-.banner_titulo h3 {
-    color: #ffffff;
-    margin-top: 50px;
-    font-size: 25px;
-    width: 700px;
-    font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    -webkit-text-stroke: #000000 1px;
-    text-shadow: #ff13a7 1px 5px 10px;
+a, li {
+  display: inline-block;
+  font-style: none;
+  list-style: none;
+  text-decoration: none;
 }
 
-/*----------------------FOOTER-------------*/
-
-
-/*ARREGLO LOS ICONOS DE REDES*/
-
-/*CAMBIO EL FOOTER*/
-
-footer {
-    width: 100vw;
-    background-color: #ff13a7;
-    margin-top: auto;
-    /*NO PONER POSICIONAMIENTO RELATIVO O ABSOLUTO*/
+/*Le digo que tome todas las propiedades de a, tambien puedo llamar a una clase .pruebaExtend 
+Le puedo dar propiedades y aparte el extend*/
+/*--------------CONTACTO--------------------------------------------------------------*/
+#mainContacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#mainContacto h1 {
+  font-size: 50px;
+  margin: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#mainContacto #formContacto {
+  display: flex;
+  width: 800px;
+  flex-direction: column;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+#mainContacto #formContacto .redesSociales {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+#mainContacto #formContacto .redesSociales p {
+  background-color: #ff13a7;
+  border: #000000 solid 2px;
+  padding: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  height: 60px;
+  border-radius: 40px;
+}
+#mainContacto #formContacto .redesSociales img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  margin: 10px;
+}
+#mainContacto #formContacto .redesSociales .wp,
+#mainContacto #formContacto .redesSociales .ig {
+  width: 400px;
+  margin: 20px;
 }
 
-#redes {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: left;
-    width: 100vw;
-    position: relative;
+.cajaMsj {
+  background-color: #ff13a7;
+  padding: 20px;
+  border: #000000 solid 2px;
+  margin: 20px;
+}
+.cajaMsj .datosPersonales {
+  height: 100px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.cajaMsj .datosPersonales .nombre {
+  display: flex;
+  flex-direction: column;
+}
+.cajaMsj .datosPersonales input {
+  height: 40px;
+  padding: 5px;
+}
+.cajaMsj .datosPersonales .inputNombre,
+.cajaMsj .datosPersonales .inputApellido {
+  width: 180px;
+}
+.cajaMsj .datosPersonales .inputEmail {
+  width: 280px;
+}
+.cajaMsj .datosPersonales .textoConsulta {
+  width: 700px;
+  padding: 30px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.cajaMsj .datosPersonales .textoConsulta textarea {
+  margin-left: 20px;
+  resize: none;
+  padding: 10px;
+  font-size: 15px;
+}
+.cajaMsj .datosPersonales .write {
+  padding: 10px;
+}
+.cajaMsj .botones {
+  text-align: right;
+  margin-right: 25px;
+}
+.cajaMsj .botones input {
+  font-size: 20px;
+  padding: 10px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.cajaMsj .botones input:hover {
+  background-color: #000000;
+  color: #ffffff;
 }
 
-#redes img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50px;
-    margin: 15px;
-}
-
-
-.redesBox {
-    display: flex;
-    justify-content: left;
-    margin-left: 10px;
-}
-
-
-
-/*-------------STOCK FEMENINO-------------------*/
-/*----------------------------------------------*/
-
-#mainStockFemenino {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-#mainStockFemenino h1 {
-    margin-top: 10px;
-    font-size: 50px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-
-
-#tablaStockFemenino {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 10px;
-    grid-template-areas:
-        "pacoRabanne dior calvinKlein azzaro ch kenzo"
-        "mugler miyake lancome tommy yves dolceGabbana"
-        "jesusDelPozo armani moschino givenchy vacio vacio"
-    ;
-    margin: 20px;
-
-}
-
-#tablaStockFemenino h2 {
-    background-color: #ff13a7;
-    padding: 5px;
-    border: #000000 solid 2px;
-    font-size: 15px;
-    height: 60px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-}
-
-#tablaStockFemenino h3 {
-    background-color: #ffffff;
-    padding: 5px;
-    font-size: 15px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.caja {
-    background-color: #ffffff;
-    border: #000000 solid 2px;
-    padding: 10px;
-    width: 150px;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-}
-
-
-/*AREAS DEL GRID*/
-.pacoRabanne {
-    grid-area: pacoRabanne;
-}
-
-.dior {
-    grid-area: dior;
-}
-
-.calvinKlein {
-    grid-area: calvinKlein;
-}
-
-.azzaro {
-    grid-area: azzaro;
-}
-
-.ch {
-    grid-area: ch;
-}
-
-.kenzo {
-    grid-area: kenzo;
-}
-
-.mugler {
-    grid-area: mugler;
-}
-
-.miyake {
-    grid-area: miyake;
-}
-
-
-.lancome {
-    grid-area: lancome;
-}
-
-.tommy {
-    grid-area: tommy;
-}
-
-.dolceGabbana {
-    grid-area: dolceGabbana;
-}
-
-.jesusDelPozo {
-    grid-area: jesusDelPozo;
-}
-
-.armani {
-    grid-area: armani;
-}
-
-.moschino {
-    grid-area: moschino;
-}
-
-.givenchy {
-    grid-area: givenchy;
-}
-
-/*------------- FIN STOCK FEMENINO-------------------*/
-/*----------------------------------------------------*/
-
-
-/*-----------------STOCK MASCULINO--------------------*/
-#mainStockMasculino {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-#mainStockMasculino h1 {
-    margin-top: 20px;
-    font-size: 50px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-}
-
-#tablaStockMasculino {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 10px;
-    grid-template-areas:
-        "pacoRabanne dior calvinKlein azzaro ch kenzo"
-        "mugler miyake creed tommy tomFord dolceGabbana"
-        "versace armani ralphLauren bvlgary vacio vacio"
-    ;
-    margin: 20px;
-}
-
-#tablaStockMasculino h2 {
-    background-color: #ff13a7;
-    padding: 5px;
-    border: #000000 solid 2px;
-    font-size: 15px;
-    height: 60px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-}
-
-#tablaStockMasculino h3 {
-    background-color: #ffffff;
-    padding: 5px;
-    font-size: 15px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-
-
-/*AREAS DEL GRID*/
-.pacoRabanne {
-    grid-area: pacoRabanne;
-}
-
-.dior {
-    grid-area: dior;
-}
-
-.calvinKlein {
-    grid-area: calvinKlein;
-}
-
-.azzaro {
-    grid-area: azzaro;
-}
-
-.ch {
-    grid-area: ch;
-}
-
-.kenzo {
-    grid-area: kenzo;
-}
-
-.mugler {
-    grid-area: mugler;
-}
-
-.miyake {
-    grid-area: miyake;
-}
-
-
-.creed {
-    grid-area: creed;
-}
-
-.tommy {
-    grid-area: tommy;
-}
-
-.tomFord {
-    grid-area: tomFord;
-}
-
-.dolceGabbana {
-    grid-area: dolceGabbana;
-}
-
-.versace {
-    grid-area: versace;
-}
-
-.armani {
-    grid-area: armani;
-}
-
-.ralphLauren {
-    grid-area: ralphLauren;
-}
-
-.bvlgary {
-    grid-area: bvlgary;
-}
-
-/*------------- FIN STOCK MASCULINO-------------------*/
-/*----------------------------------------------------------------------------*/
-
-
-
+/*--------------FIN CONTACTO-----------*/
 /*----------------- PAGE ENVIOS ---------------------- */
-
 #mainEnvios {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
 }
-
 #mainEnvios h1 {
-    font-size: 50px;
-    margin-bottom: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 50px;
+  margin-bottom: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #vehiculos {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
-
-.moto,
-.viaCargo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+#vehiculos .moto,
+#vehiculos .viaCargo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-
-.viaCargo img,
-.moto img {
-    width: 500px;
-    margin: 10px;
+#vehiculos .moto img,
+#vehiculos .viaCargo img {
+  width: 500px;
+  margin: 10px;
+}
+#vehiculos .moto h2,
+#vehiculos .viaCargo h2 {
+  font-size: 20px;
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  height: 100px;
+  width: 400px;
+  padding: 15px;
+  margin: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .viaCargo img {
-    height: 333px;
-}
-
-
-.moto h2,
-.viaCargo h2 {
-    font-size: 20px;
-    background-color: #ffffff;
-    border: 2px solid #000000;
-    border-radius: 10px;
-    height: 100px;
-    width: 400px;
-    padding: 15px;
-    margin: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-
+  height: 333px;
 }
 
 /*------------- FIN ENVIOS-------------------*/
-/*----------------------------------------------------------------------------*/
-
-
 /*--------------------PICKUP-----------------------------------------------------*/
-
 #mainPickup {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
-
-#mainPickup h1 {
-    font-size: 50px;
-    margin-bottom: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
+#mainPickup .mainPickup_h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
 }
-
-#ubicacion {
-    display: flex;
-    justify-content: center;
+#mainPickup .mainPickup_mapas {
+  display: flex;
+  justify-content: center;
 }
-
-.belgrano img,
-.laboca img {
-    width: 500px;
-    height: 365px;
-}
-
-
-.belgrano h2,
-.laboca h2 {
-    font-size: 15px;
-    background-color: #ffffff;
-    border: 2px solid #000000;
-    border-radius: 10px;
-    height: 100px;
-    padding: 20px;
-    width: 500px;
-    margin: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-}
-
-.ubi {
-    width: 500px;
-    margin: 20px;
-}
-
-.mapas {
-    display: flex;
-    justify-content: center;
+#mainPickup .mainPickup_mapas .ubi {
+  width: 500px;
+  margin: 20px;
 }
 
 /*------------- FIN PICKUP-------------------*/
 /*----------------------------------------------------------------------------*/
-
-
-
-/*--------------CONTACTO--------------------------------------------------------------*/
-
-#mainContacto {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+/*-------------STOCK FEMENINO-------------------*/
+/*----------------------------------------------*/
+#mainStockFemenino {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#mainStockFemenino h1 {
+  margin-top: 10px;
+  font-size: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#mainContacto h1 {
-    font-size: 50px;
-    margin: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+#tablaStockFemenino {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  grid-template-areas: "pacoRabanne dior calvinKlein azzaro ch kenzo" "mugler miyake lancome tommy yves dolceGabbana" "jesusDelPozo armani moschino givenchy vacio vacio";
+  margin: 20px;
+}
+#tablaStockFemenino h2 {
+  background-color: #ff13a7;
+  padding: 5px;
+  border: #000000 solid 2px;
+  font-size: 15px;
+  height: 60px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#tablaStockFemenino h3 {
+  background-color: #ffffff;
+  padding: 5px;
+  font-size: 15px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.redesSociales {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
+.caja {
+  background-color: #ffffff;
+  border: #000000 solid 2px;
+  padding: 10px;
+  width: 150px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 }
 
-.wp,
-.ig {
-    width: 400px;
-    margin: 20px;
+/*AREAS DEL GRID*/
+.pacoRabanne {
+  grid-area: pacoRabanne;
 }
 
-.redesSociales img {
-    width: 200px;
-    height: 200px;
-    border-radius: 100%;
-    margin: 10px;
+.dior {
+  grid-area: dior;
 }
 
-.redesSociales p {
-    background-color: #ff13a7;
-    border: #000000 solid 2px;
-    padding: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-    height: 60px;
-    border-radius: 40px;
-
+.calvinKlein {
+  grid-area: calvinKlein;
 }
 
-.cajaMsj {
-    background-color: #ff13a7;
-    padding: 20px;
-    border: #000000 solid 2px;
-    margin: 20px;
-
+.azzaro {
+  grid-area: azzaro;
 }
 
-#formContacto {
-    display: flex;
-    width: 800px;
-    flex-direction: column;
-    font-size: 15px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
+.ch {
+  grid-area: ch;
 }
 
-.datosPersonales {
-    height: 100px;
-    display: flex;
-    gap: 10px;
-    justify-content: center;
+.kenzo {
+  grid-area: kenzo;
 }
 
-.nombre {
-    display: flex;
-    flex-direction: column;
+.mugler {
+  grid-area: mugler;
 }
 
-/* .datosPersonales label {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 2px;
-} */
-
-
-
-
-.datosPersonales input {
-    height: 40px;
-    padding: 5px;
+.miyake {
+  grid-area: miyake;
 }
 
-.inputNombre,
-.inputApellido {
-    width: 180px;
+.lancome {
+  grid-area: lancome;
 }
 
-.inputEmail {
-    width: 280px;
+.tommy {
+  grid-area: tommy;
 }
 
-.textoConsulta {
-    width: 700px;
-    padding: 30px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-
+.dolceGabbana {
+  grid-area: dolceGabbana;
 }
 
-.write {
-    padding: 10px;
+.jesusDelPozo {
+  grid-area: jesusDelPozo;
 }
 
-.textoConsulta textarea {
-    margin-left: 20px;
-    resize: none;
-    padding: 10px;
-    font-size: 15px;
+.armani {
+  grid-area: armani;
 }
 
-/* .textoConsulta label {
-    display: flex;
-    justify-content: center;
-    align-items: top;
-    justify-content: space-between;
-} 
-
-.labelConsulta {
-    padding: 10px;
-    width: 680px;
-}
-*/
-
-.botones {
-    text-align: right;
-    margin-right: 25px;
+.moschino {
+  grid-area: moschino;
 }
 
-.botones input {
-    font-size: 20px;
-    padding: 10px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+.givenchy {
+  grid-area: givenchy;
 }
 
-.botones input:hover {
-    background-color: #000000;
-    color: #ffffff;
+/*------------- FIN STOCK FEMENINO-------------------*/
+/*-----------------STOCK MASCULINO--------------------*/
+#mainStockMasculino {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#mainStockMasculino h1 {
+  margin-top: 20px;
+  font-size: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/*--------------FIN CONTACTO-----------*/
+#tablaStockMasculino {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  grid-template-areas: "pacoRabanne dior calvinKlein azzaro ch kenzo" "mugler miyake creed tommy tomFord dolceGabbana" "versace armani ralphLauren bvlgary vacio vacio";
+  margin: 20px;
+}
+#tablaStockMasculino .tablaStockMasculino_h2 {
+  background-color: #ff13a7;
+  padding: 5px;
+  border: #000000 solid 2px;
+  font-size: 15px;
+  height: 60px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#tablaStockMasculino .tablaStockMasculino_h3 {
+  background-color: #ffffff;
+  padding: 5px;
+  font-size: 15px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
 
+/*AREAS DEL GRID*/
+.pacoRabanne {
+  grid-area: pacoRabanne;
+}
+
+.dior {
+  grid-area: dior;
+}
+
+.calvinKlein {
+  grid-area: calvinKlein;
+}
+
+.azzaro {
+  grid-area: azzaro;
+}
+
+.ch {
+  grid-area: ch;
+}
+
+.kenzo {
+  grid-area: kenzo;
+}
+
+.mugler {
+  grid-area: mugler;
+}
+
+.miyake {
+  grid-area: miyake;
+}
+
+.creed {
+  grid-area: creed;
+}
+
+.tommy {
+  grid-area: tommy;
+}
+
+.tomFord {
+  grid-area: tomFord;
+}
+
+.dolceGabbana {
+  grid-area: dolceGabbana;
+}
+
+.versace {
+  grid-area: versace;
+}
+
+.armani {
+  grid-area: armani;
+}
+
+.ralphLauren {
+  grid-area: ralphLauren;
+}
+
+.bvlgary {
+  grid-area: bvlgary;
+}
+
+/*------------- FIN STOCK MASCULINO-------------------*/
+main {
+  min-height: 100vh;
+  /*para que siempre el footer este abajo*/
+  width: 100vw;
+  display: flex;
+  background-color: #000000;
+  background-image: url(../images/fotoperfumes3.jpg);
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.banner_titulo h2 {
+  color: #000000;
+  font-size: 60px;
+  text-shadow: #ff13a7 1px 5px 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+
+.banner_titulo h3 {
+  color: #ffffff;
+  margin-top: 50px;
+  font-size: 25px;
+  width: 700px;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  -webkit-text-stroke: #000000 1px;
+  text-shadow: #ff13a7 1px 5px 10px;
+}
+
+/*----------------------------------------------------------------------------*/
 /*--------------MEDIA QUERIS-------------*/
-
 @media (max-width: 883px) {
-
-    /*ENCABEZADO*/
-    #navBar ul li {
-        display: block;
-        text-align: center;
-    }
-
-    #navBar ul li a {
-        font-size: 15px;
-    }
-
-    header nav img {
-        width: 90px;
-        height: 90px;
-    }
-
-    /*TITULOS INICIO*/
-    .banner_titulo h2 {
-        font-size: 40px;
-    }
-
-    .banner_titulo h3 {
-        font-size: 17px;
-        width: 400px;
-    }
-
-
-    /*STOCK FEMENINO*/
-    #mainStockFemenino {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    #mainStockFemenino H1 {
-        font-size: 30px;
-    }
-
-    #tablaStockFemenino {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100vw;
-        justify-content: center;
-    }
-
-    /*STOCK MASCULINO*/
-    #mainStockMasculino {
-        flex-wrap: wrap;
-    }
-
-    #mainStockMasculino H1 {
-        font-size: 30px;
-    }
-
-    #tablaStockMasculino {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100vw;
-        justify-content: center;
-    }
-
-    /*ENVIOS*/
-    #mainEnvios h1 {
-        font-size: 30px;
-        margin-top: 20px;
-    }
-
-    #vehiculos {
-        flex-wrap: wrap;
-    }
-
-
-
-    #vehiculos h2 {
-        font-size: 15px;
-        height: 80px;
-    }
-
-    /*PICKUP*/
-    #mainPickup h1 {
-        font-size: 30px;
-        margin-top: 20px;
-    }
-
-    #ubicacion {
-        flex-wrap: wrap;
-    }
-
-    .belgrano img,
-    .laboca img {
-        width: 350px;
-        height: 250px;
-    }
-
-
-    .belgrano h2,
-    .laboca h2 {
-        font-size: 10px;
-        height: 70px;
-        width: 350px;
-    }
-
-    .mapas {
-        flex-wrap: wrap;
-    }
-
-    /*CONTACTO*/
-    .redesSociales {
-        flex-wrap: wrap;
-    }
-
-    #mainContacto h1 {
-        font-size: 30px;
-    }
-
-    #mainContacto h2 {
-        font-size: 20px;
-    }
-
-    .redesSociales img {
-        width: 100px;
-        height: 100px;
-    }
-
-
-    /*-----FORM----*/
-
-    #formContacto {
-        width: 500px;
-        justify-content: center;
-
-    }
-
-    .datosPersonales {
-        flex-wrap: wrap;
-    }
-
-    .textoConsulta {
-        width: 400px;
-        justify-content: center;
-
-    }
-
-    .textareaText textarea {
-        width: 350px;
-    }
-
-
-    .botones input {
-        font-size: 10px;
-    }
+  /*ENCABEZADO*/
+  #navBar img {
+    width: 90px;
+    height: 90px;
+  }
+  #navBar ul li {
+    display: block;
+    text-align: center;
+  }
+  #navBar ul li a, #navBar ul li li {
+    font-size: 15px;
+  }
+  /*TITULOS INICIO*/
+  .banner_titulo h2 {
+    font-size: 40px;
+  }
+  .banner_titulo h3 {
+    font-size: 17px;
+    width: 400px;
+  }
+  /*STOCK FEMENINO*/
+  #mainStockFemenino {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #mainStockFemenino h1 {
+    font-size: 30px;
+  }
+  #tablaStockFemenino {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    justify-content: center;
+  }
+  /*STOCK MASCULINO*/
+  #mainStockMasculino {
+    flex-wrap: wrap;
+  }
+  #mainStockMasculino h1 {
+    font-size: 30px;
+  }
+  #tablaStockMasculino {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    justify-content: center;
+  }
+  /*ENVIOS*/
+  #mainEnvios h1 {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+  #vehiculos {
+    flex-wrap: wrap;
+  }
+  #vehiculos h2 {
+    font-size: 15px;
+    height: 80px;
+  }
+  /*PICKUP*/
+  .mainPickup_h1 {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+  .mainPickup_mapas {
+    flex-wrap: wrap;
+  }
+  /*CONTACTO*/
+  .redesSociales {
+    flex-wrap: wrap;
+  }
+  #mainContacto h1 {
+    font-size: 30px;
+  }
+  #mainContacto h2 {
+    font-size: 20px;
+  }
+  .redesSociales img {
+    width: 100px;
+    height: 100px;
+  }
+  /*-----FORM----*/
+  #formContacto {
+    width: 500px;
+    justify-content: center;
+  }
+  .datosPersonales {
+    flex-wrap: wrap;
+  }
+  .datosPersonales .textoConsulta {
+    width: 400px;
+    justify-content: center;
+  }
+  .datosPersonales .textareaText textarea {
+    width: 350px;
+  }
+  .botones input {
+    font-size: 10px;
+  }
 }
-
-
 @media (max-width: 320px) {
-
-    /*ENCABEZADO*/
-    #navBar ul li a {
-        font-size: 10px;
-        margin-top: 10px;
-        padding-top: 10px;
-    }
-
-
-    #navBar ul li a:hover {
-        font-size: 15x;
-    }
-
-    /*TITULOS INICIO*/
-    .banner_titulo h2 {
-        font-size: 20px;
-        width: 200px;
-    }
-
-    .banner_titulo h3 {
-        font-size: 10px;
-        width: 200px;
-    }
-
-    /*ENVIOS*/
-    .viaCargo img,
-    .moto img {
-        width: 200px;
-        height: 120px;
-
-    }
-
-    #vehiculos h2 {
-        font-size: 10px;
-    }
-
-    .moto h2,
-    .viaCargo h2 {
-        width: 200px;
-    }
-
-
-
-    /*PICKUP*/
-
-    .mapas {
-        flex-wrap: wrap;
-        width: 250px;
-        font-size: 10px;
-        justify-content: center;
-    }
-
-    .card .ubi {
-        justify-content: center;
-    }
-
-    .mapas img {
-        width: 200px;
-    }
-
-    /*CONTACTO*/
-
-
-    #mainContacto h1 {
-        font-size: 20px;
-    }
-
-    #mainContacto h2 {
-        font-size: 15px;
-        width: 250px;
-    }
-
-    .redesSociales img {
-        width: 70px;
-        height: 70px;
-    }
-
-    .redesSociales {
-        font-size: 10px;
-        width: 250px;
-    }
-
-
-    /*-----FORM----*/
-
-    #formContacto {
-        width: 250px;
-        justify-content: center;
-
-    }
-
-    .inputEmail,
-    .inputNombre,
-    .inputApellido {
-        width: 180px;
-        height: 40px;
-    }
-
-    .nombre,
-    .apellido,
-    .email {
-        height: 50px;
-    }
-
-    .cajaMsj {
-        height: 500px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-
-    }
-
-    .textoConsulta {
-        width: 180px;
-        font-size: 10px;
-        height: 100px;
-        justify-content: center;
-        align-items: center;
-        margin-top: 50px;
-
-    }
-
-    .write {
-        width: 200px;
-    }
-
-    .write h2 {
-        font-size: 5px;
-        width: 180px;
-    }
-
-    .textareaText textarea {
-        width: 160px;
-        height: 100px;
-    }
-
-
-
-    #formContacto h2 {
-        font-size: 10px;
-        text-align: center;
-        width: 180px;
-        align-items: center;
-        justify-content: center;
-    }
-
-    /*FOOTER*/
-    #redes img {
-        width: 30px;
-        height: 30px;
-        margin: 5px;
-    }
-
+  /*ENCABEZADO*/
+  #navBar ul li a, #navBar ul li li {
+    font-size: 10px;
+    margin-top: 10px;
+    padding-top: 10px;
+  }
+  #navBar ul li a:hover, #navBar ul li li:hover {
+    font-size: 15x;
+  }
+  /*TITULOS INICIO*/
+  .banner_titulo h2 {
+    font-size: 20px;
+    width: 200px;
+  }
+  .banner_titulo h3 {
+    font-size: 10px;
+    width: 200px;
+  }
+  /*ENVIOS*/
+  .viaCargo img,
+  .moto img {
+    width: 200px;
+    height: 120px;
+  }
+  .viaCargo h2,
+  .moto h2 {
+    width: 200px;
+  }
+  #vehiculos h2 {
+    font-size: 10px;
+  }
+  /*PICKUP*/
+  .mainPickup_mapas {
+    flex-wrap: wrap;
+    width: 250px;
+    font-size: 10px;
+    justify-content: center;
+  }
+  .card .ubi {
+    justify-content: center;
+  }
+  .mapas img {
+    width: 200px;
+  }
+  /*CONTACTO*/
+  #mainContacto h1 {
+    font-size: 20px;
+  }
+  #mainContacto h2 {
+    font-size: 15px;
+    width: 250px;
+  }
+  .redesSociales {
+    font-size: 10px;
+    width: 250px;
+  }
+  .redesSociales img {
+    width: 70px;
+    height: 70px;
+  }
+  /*-----FORM----*/
+  #formContacto {
+    width: 250px;
+    justify-content: center;
+  }
+  #formContacto h2 {
+    font-size: 10px;
+    text-align: center;
+    width: 180px;
+    align-items: center;
+    justify-content: center;
+  }
+  #formContacto .inputEmail,
+  #formContacto .inputNombre,
+  #formContacto .inputApellido {
+    width: 180px;
+    height: 40px;
+  }
+  #formContacto .nombre,
+  #formContacto .apellido,
+  #formContacto .email {
+    height: 50px;
+  }
+  #formContacto .cajaMsj {
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  #formContacto .textoConsulta {
+    width: 180px;
+    font-size: 10px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  #formContacto .write {
+    width: 200px;
+  }
+  #formContacto .write h2 {
+    font-size: 5px;
+    width: 180px;
+  }
+  #formContacto .textareaText textarea {
+    width: 160px;
+    height: 100px;
+  }
+  /*FOOTER*/
+  #redes img {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+  }
 }
-
 /*
 .footerLinks ul li:nth-child(3) a:hover
 --> Entro a la lista de los links y selecciono solo el tercer link para modificarle una propiedad
@@ -981,3 +749,6 @@ link rel="stylesheet" href:"https://cdnjs.cloudflare.com/ajax/libs/imagehover.cs
 
 Uso boostrap solo si necesito algo que no tenga que modificar, puedo implementar solo un boton en el trabajo pre entregable.
 */
+/*EN ESTA HOJA NO DEBE QUEDAR NADA, SOLO LOS IMPORT Y VARIABLES. EL GUION BAJO FUNCIONA COMO EL IMPORT, SIN ESO NO ME FUNCIONA*/
+
+/*# sourceMappingURL=style.css.map */

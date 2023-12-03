@@ -1,0 +1,55 @@
+/*----------------- PAGE ENVIOS ---------------------- */
+
+#mainEnvios {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+
+    h1 {
+        font-size: 50px;
+        margin-bottom: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+}
+
+
+#vehiculos {
+    display: flex;
+    justify-content: center;
+
+    .moto,
+    .viaCargo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        img {
+            width: 500px;
+            margin: 10px;
+        }
+
+        h2 {
+            font-size: 20px;
+            background-color: #ffffff;
+            border: 2px solid #000000;
+            border-radius: 10px;
+            height: 100px;
+            width: 400px;
+            padding: 15px;
+            margin: 10px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    }
+}
+
+
+.viaCargo img {
+    height: 333px;
+}
+
+
+
+/*------------- FIN ENVIOS-------------------*/
