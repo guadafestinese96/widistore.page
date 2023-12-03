@@ -3,6 +3,7 @@
 #mainPickup {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     
     .mainPickup_h1 {
         font-size: 50px;
@@ -23,30 +24,7 @@
     }
 }
 
-// #ubicacion {
-//     display: flex;
-//     justify-content: center;
-// }
 
-// .belgrano img,
-// .laboca img {
-//     width: 500px;
-//     height: 365px;
-// }
-
-// .belgrano h2,
-// .laboca h2 {
-//     font-size: 15px;
-//     background-color: #ffffff;
-//     border: 2px solid #000000;
-//     border-radius: 10px;
-//     height: 100px;
-//     padding: 20px;
-//     width: 500px;
-//     margin: 10px;
-//     font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-// }
 
 
 

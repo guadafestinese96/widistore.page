@@ -1,12 +1,11 @@
 header {
-    background-color: #ff13a7;
+    background-color:rgb(255 19 167 / 95%);
     height: 150px;
-    width: 100vw;
     display: flex;
-    position: fixed;
+    position: sticky;
+    top: 0px;
     justify-content: center;
     z-index: 100;
-    position: relative;
 }
 
 

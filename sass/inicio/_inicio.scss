@@ -2,7 +2,6 @@ main {
 
     min-height: 100vh;
     /*para que siempre el footer este abajo*/
-    width: 100vw;
     display: flex;
     background-color: #000000;
     background-image: url(../images/fotoperfumes3.jpg);
@@ -263,7 +262,7 @@ main {
 
     .mainPickup_mapas {
         flex-wrap: wrap;
-        width: 250px;
+        width: 80vw;
         font-size: 10px;
         justify-content: center;
     }

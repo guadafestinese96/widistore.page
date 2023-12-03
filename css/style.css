@@ -1,6 +1,5 @@
 /*----------------------FOOTER-------------*/
 footer {
-  width: 100vw;
   background-color: #ff13a7;
   margin-top: auto;
   /*NO PONER POSICIONAMIENTO RELATIVO O ABSOLUTO*/
@@ -11,7 +10,6 @@ footer #redes {
   flex-direction: column;
   text-align: left;
   width: 100vw;
-  position: relative;
 }
 footer #redes .redesBox {
   display: flex;
@@ -27,14 +25,13 @@ footer #redes .redesBox img {
 
 /*agrego el footer lo enlazo*/
 header {
-  background-color: #ff13a7;
+  background-color: rgba(255, 19, 167, 0.95);
   height: 150px;
-  width: 100vw;
   display: flex;
-  position: fixed;
+  position: sticky;
+  top: 0px;
   justify-content: center;
   z-index: 100;
-  position: relative;
 }
 
 #navBar {
@@ -255,6 +252,7 @@ Le puedo dar propiedades y aparte el extend*/
 #mainPickup {
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 #mainPickup .mainPickup_h1 {
   font-size: 50px;
@@ -487,7 +485,6 @@ Le puedo dar propiedades y aparte el extend*/
 main {
   min-height: 100vh;
   /*para que siempre el footer este abajo*/
-  width: 100vw;
   display: flex;
   background-color: #000000;
   background-image: url(../images/fotoperfumes3.jpg);
@@ -654,7 +651,7 @@ main {
   /*PICKUP*/
   .mainPickup_mapas {
     flex-wrap: wrap;
-    width: 250px;
+    width: 80vw;
     font-size: 10px;
     justify-content: center;
   }

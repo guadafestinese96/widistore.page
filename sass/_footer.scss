@@ -1,11 +1,9 @@
 /*----------------------FOOTER-------------*/
 
-
-
 footer {
-    width: 100vw;
     background-color: #ff13a7;
     margin-top: auto;
+
     /*NO PONER POSICIONAMIENTO RELATIVO O ABSOLUTO*/
     #redes {
         display: flex;
@@ -13,12 +11,12 @@ footer {
         flex-direction: column;
         text-align: left;
         width: 100vw;
-        position: relative;
 
         .redesBox {
             display: flex;
             justify-content: left;
             margin-left: 10px;
+
             img {
                 width: 80px;
                 height: 80px;
@@ -26,12 +24,8 @@ footer {
                 margin: 15px;
             }
         }
-        
-       
+
+
 
     }
 }
-
-
-
-
