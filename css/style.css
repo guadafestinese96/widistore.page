@@ -1,26 +1,43 @@
 /*----------------------FOOTER-------------*/
-footer {
-  background-color: #ff13a7;
-  margin-top: auto;
-  /*NO PONER POSICIONAMIENTO RELATIVO O ABSOLUTO*/
-}
-footer #redes {
+/*NO PONER POSICIONAMIENTO RELATIVO O ABSOLUTO*/
+#redes {
   display: flex;
   justify-content: center;
-  flex-direction: column;
   text-align: left;
-  width: 100vw;
+  background-color: #ff13a7;
+  margin-top: auto;
 }
-footer #redes .redesBox {
+#redes .redesBox {
   display: flex;
   justify-content: left;
   margin-left: 10px;
 }
-footer #redes .redesBox img {
+#redes .redesBox .imgFooter img {
   width: 80px;
   height: 80px;
   border-radius: 50px;
   margin: 15px;
+}
+
+.wpFooter img:hover {
+  box-shadow: 5px 5px 5px rgb(0, 0, 0);
+  transition: 0.5s;
+  /*PRIMER VALOR EJE X Y SEGUNDO VALOR EJE Y
+  VALORES POSITIVOS: DERECHA ABAJO
+  VALORES NEGATIVOS: ARRIBA IZQUIERDA*/
+  transform: translate(-5px, -5px);
+}
+
+.igFooter img:hover {
+  box-shadow: 5px 5px 5px rgb(0, 0, 0);
+  transition: 0.5s;
+  transform: translate(-5px, -5px);
+}
+
+.ubiFooter img:hover {
+  box-shadow: 5px 5px 5px rgb(0, 0, 0);
+  transition: 0.5s;
+  transform: translate(-5px, -5px);
 }
 
 /*agrego el footer lo enlazo*/
