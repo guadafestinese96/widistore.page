@@ -518,7 +518,7 @@ main {
 
 /*----------------------------------------------------------------------------*/
 /*--------------MEDIA QUERIS-------------*/
-@media (max-width: 883px) {
+@media screen and (min-width: 501px) and (max-width: 880px) {
   /*ENCABEZADO*/
   #navBar img {
     width: 90px;
@@ -532,12 +532,19 @@ main {
     font-size: 15px;
   }
   /*TITULOS INICIO*/
-  .banner_titulo h2 {
+  #centro .banner_titulo {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  #centro .banner_titulo h2 {
     font-size: 40px;
   }
-  .banner_titulo h3 {
-    font-size: 17px;
-    width: 400px;
+  #centro .banner_titulo h3 {
+    font-size: 20px;
+    width: 300px;
   }
   /*STOCK FEMENINO*/
   #mainStockFemenino {
@@ -571,10 +578,12 @@ main {
     font-size: 30px;
     margin-top: 20px;
   }
-  #vehiculos {
+  #mainEnvios #vehiculos {
+    display: flex;
     flex-wrap: wrap;
+    margin: 20px;
   }
-  #vehiculos h2 {
+  #mainEnvios #vehiculos h2 {
     font-size: 15px;
     height: 80px;
   }
@@ -587,36 +596,40 @@ main {
     flex-wrap: wrap;
   }
   /*CONTACTO*/
-  .redesSociales {
-    flex-wrap: wrap;
-  }
   #mainContacto h1 {
     font-size: 30px;
   }
   #mainContacto h2 {
     font-size: 20px;
   }
-  .redesSociales img {
-    width: 100px;
-    height: 100px;
-  }
-  /*-----FORM----*/
-  #formContacto {
+  #mainContacto #formContacto {
     width: 500px;
     justify-content: center;
   }
-  .datosPersonales {
+  #mainContacto #formContacto .redesSociales {
     flex-wrap: wrap;
   }
-  .datosPersonales .textoConsulta {
+  #mainContacto #formContacto .redesSociales .wp img,
+  #mainContacto #formContacto .redesSociales .ig img {
+    width: 100px;
+    height: 100px;
+  }
+  #mainContacto #formContacto .cajaMsj {
+    height: 500px;
+  }
+  #mainContacto #formContacto .cajaMsj .datosPersonales {
+    height: 200px;
+    flex-wrap: wrap;
+  }
+  #mainContacto #formContacto .cajaMsj .textoConsulta {
     width: 400px;
     justify-content: center;
   }
-  .datosPersonales .textareaText textarea {
+  #mainContacto #formContacto .cajaMsj .textoConsulta .textareaText textarea {
     width: 350px;
   }
-  .botones input {
-    font-size: 10px;
+  #mainContacto #formContacto .cajaMsj .botones input {
+    font-size: 15px;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 500px) {
@@ -624,119 +637,165 @@ main {
   header {
     height: 250px;
   }
+  #navBar ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
   #navBar ul li a, #navBar ul li li {
     font-size: 10px;
-    margin-top: 10px;
-    padding-top: 10px;
   }
   #navBar ul li a:hover, #navBar ul li li:hover {
-    font-size: 15x;
+    font-size: 15px;
   }
   /*TITULOS INICIO*/
-  .banner_titulo h2 {
+  #centro .banner_titulo h2 {
+    font-size: 35px;
+    width: 200px;
+  }
+  #centro .banner_titulo h3 {
     font-size: 20px;
     width: 200px;
   }
-  .banner_titulo h3 {
-    font-size: 10px;
+  /*STOCK FEMENINO*/
+  #mainStockFemenino h1 {
+    font-size: 20px;
+    margin: 10px;
+  }
+  #mainStockFemenino #tablaStockFemenino {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+    gap: 10px;
+  }
+  #mainStockFemenino #tablaStockFemenino .caja {
     width: 200px;
+  }
+  #mainStockFemenino #tablaStockFemenino .givenchy {
+    margin-bottom: 10px;
+  }
+  /*STOCK MASCULINO*/
+  #mainStockMasculino h1 {
+    font-size: 20px;
+    margin: 10px;
+  }
+  #mainStockMasculino #tablaStockMasculino {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+    gap: 10px;
+  }
+  #mainStockMasculino #tablaStockMasculino .caja {
+    width: 200px;
+  }
+  #mainStockMasculino #tablaStockMasculino .bvlgary {
+    margin-bottom: 10px;
   }
   /*ENVIOS*/
-  .viaCargo img,
-  .moto img {
-    width: 200px;
-    height: 120px;
+  #mainEnvios h1 {
+    font-size: 20px;
+    margin-top: 20px;
   }
-  .viaCargo h2,
-  .moto h2 {
-    width: 200px;
+  #mainEnvios #vehiculos {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
   }
-  #vehiculos h2 {
-    font-size: 10px;
+  #mainEnvios #vehiculos h2 {
+    font-size: 15px;
+    height: 80px;
+  }
+  #mainEnvios #vehiculos .viaCargo,
+  #mainEnvios #vehiculos .moto {
+    width: 280px;
+    height: 260px;
+  }
+  #mainEnvios #vehiculos .viaCargo img,
+  #mainEnvios #vehiculos .moto img {
+    width: 250px;
+    height: 180px;
   }
   /*PICKUP*/
-  .mainPickup_mapas {
+  #mainPickup .mainPickup_h1 {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  #mainPickup .mainPickup_mapas {
     flex-wrap: wrap;
     width: 80vw;
     font-size: 10px;
     justify-content: center;
   }
-  .card .ubi {
+  #mainPickup .card .ubi {
     justify-content: center;
-  }
-  .mapas img {
-    width: 200px;
   }
   /*CONTACTO*/
   #mainContacto h1 {
-    font-size: 20px;
+    font-size: 30px;
   }
   #mainContacto h2 {
-    font-size: 15px;
-    width: 250px;
+    font-size: 20px;
   }
-  .redesSociales {
-    font-size: 10px;
-    width: 250px;
-  }
-  .redesSociales img {
-    width: 70px;
-    height: 70px;
-  }
-  /*-----FORM----*/
-  #formContacto {
-    width: 250px;
+  #mainContacto #formContacto {
+    width: 500px;
     justify-content: center;
-  }
-  #formContacto h2 {
-    font-size: 10px;
-    text-align: center;
-    width: 180px;
-    align-items: center;
-    justify-content: center;
-  }
-  #formContacto .inputEmail,
-  #formContacto .inputNombre,
-  #formContacto .inputApellido {
-    width: 180px;
-    height: 40px;
-  }
-  #formContacto .nombre,
-  #formContacto .apellido,
-  #formContacto .email {
-    height: 50px;
-  }
-  #formContacto .cajaMsj {
-    height: 500px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #mainContacto #formContacto .redesSociales {
     flex-wrap: wrap;
+  }
+  #mainContacto #formContacto .redesSociales .wp,
+  #mainContacto #formContacto .redesSociales .ig {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     justify-content: center;
     align-items: center;
   }
-  #formContacto .textoConsulta {
-    width: 180px;
+  #mainContacto #formContacto .redesSociales .wp p,
+  #mainContacto #formContacto .redesSociales .ig p {
     font-size: 10px;
+    width: 250px;
+  }
+  #mainContacto #formContacto .redesSociales .wp img,
+  #mainContacto #formContacto .redesSociales .ig img {
+    width: 100px;
     height: 100px;
+  }
+  #mainContacto #formContacto .cajaMsj {
+    height: 500px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
   }
-  #formContacto .write {
-    width: 200px;
+  #mainContacto #formContacto .cajaMsj .datosPersonales {
+    height: 200px;
+    flex-wrap: wrap;
   }
-  #formContacto .write h2 {
-    font-size: 5px;
-    width: 180px;
+  #mainContacto #formContacto .cajaMsj .textoConsulta {
+    width: 280px;
+    justify-content: center;
   }
-  #formContacto .textareaText textarea {
-    width: 160px;
-    height: 100px;
+  #mainContacto #formContacto .cajaMsj .textoConsulta h2 {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  #mainContacto #formContacto .cajaMsj .textoConsulta .textareaText textarea {
+    width: 250px;
+  }
+  #mainContacto #formContacto .cajaMsj .botones input {
+    font-size: 15px;
   }
   /*FOOTER*/
-  #redes img {
-    width: 30px;
-    height: 30px;
-    margin: 5px;
+  #redes .redesBox .imgFooter img {
+    width: 10vw;
+    height: 10vw;
   }
 }
 /*

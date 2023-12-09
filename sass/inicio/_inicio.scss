@@ -60,7 +60,7 @@ main {
 
 /*--------------MEDIA QUERIS-------------*/
 
-@media (max-width: 883px) {
+@media screen and (min-width: 501px) and (max-width: 880px) {
 
     /*ENCABEZADO*/
     #navBar {
@@ -82,20 +82,26 @@ main {
 
 
     /*TITULOS INICIO*/
-    .banner_titulo {
+
+
+    #centro .banner_titulo {
+
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
 
         h2 {
             font-size: 40px;
         }
 
         h3 {
-            font-size: 17px;
-            width: 400px;
+            font-size: 20px;
+            width: 300px;
         }
+
     }
-
-
-
 
     /*STOCK FEMENINO*/
     #mainStockFemenino {
@@ -132,19 +138,25 @@ main {
     }
 
     /*ENVIOS*/
-    #mainEnvios h1 {
-        font-size: 30px;
-        margin-top: 20px;
-    }
+    #mainEnvios {
+        h1 {
+            font-size: 30px;
+            margin-top: 20px;
+        }
 
-    #vehiculos {
-        flex-wrap: wrap;
+        #vehiculos {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px;
 
-        h2 {
-            font-size: 15px;
-            height: 80px;
+            h2 {
+                font-size: 15px;
+                height: 80px;
+            }
         }
     }
+
+
 
 
     /*PICKUP*/
@@ -160,9 +172,6 @@ main {
 
 
     /*CONTACTO*/
-    .redesSociales {
-        flex-wrap: wrap;
-    }
 
     #mainContacto {
         h1 {
@@ -172,44 +181,47 @@ main {
         h2 {
             font-size: 20px;
         }
-    }
 
-
-    .redesSociales img {
-        width: 100px;
-        height: 100px;
-    }
-
-
-    /*-----FORM----*/
-
-    #formContacto {
-        width: 500px;
-        justify-content: center;
-
-    }
-
-    .datosPersonales {
-        flex-wrap: wrap;
-
-        .textoConsulta {
-            width: 400px;
+        #formContacto {
+            width: 500px;
             justify-content: center;
 
+            .redesSociales {
+                flex-wrap: wrap;
+
+                .wp img,
+                .ig img {
+                    width: 100px;
+                    height: 100px;
+                }
+
+            }
+
+            .cajaMsj {
+                height: 500px;
+
+                .datosPersonales {
+                    height: 200px;
+                    flex-wrap: wrap;
+                }
+
+                .textoConsulta {
+                    width: 400px;
+                    justify-content: center;
+
+                    .textareaText textarea {
+                        width: 350px;
+                    }
+
+                }
+
+                .botones input {
+                    font-size: 15px;
+                }
+            }
         }
 
-        .textareaText textarea {
-            width: 350px;
-        }
     }
-
-    .botones input {
-        font-size: 10px;
-    }
-
-
-
-
 
 }
 
@@ -224,16 +236,20 @@ main {
 
     #navBar {
 
+        ul {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
 
         ul li {
             a {
                 font-size: 10px;
-                margin-top: 10px;
-                padding-top: 10px;
+
             }
 
             a:hover {
-                font-size: 15x;
+                font-size: 15px;
             }
         }
 
@@ -242,158 +258,214 @@ main {
 
 
     /*TITULOS INICIO*/
-    .banner_titulo {
+    #centro .banner_titulo {
 
         h2 {
-            font-size: 20px;
+            font-size: 35px;
             width: 200px;
         }
 
         h3 {
-            font-size: 10px;
+            font-size: 20px;
             width: 200px;
+        }
+    }
+
+    /*STOCK FEMENINO*/
+    #mainStockFemenino {
+        h1 {
+            font-size: 20px;
+            margin: 10px;
+        }
+
+        #tablaStockFemenino {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0px;
+            gap: 10px;
+
+            .caja {
+                width: 200px;
+            }
+
+            .givenchy {
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    /*STOCK MASCULINO*/
+    #mainStockMasculino {
+        h1 {
+            font-size: 20px;
+            margin: 10px;
+        }
+
+        #tablaStockMasculino {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0px;
+            gap: 10px;
+
+            .caja {
+                width: 200px;
+            }
+
+            .bvlgary {
+                margin-bottom: 10px;
+            }
         }
     }
 
     /*ENVIOS*/
-    .viaCargo,
-    .moto {
-        img {
-            width: 200px;
-            height: 120px;
+
+    #mainEnvios {
+        h1 {
+            font-size: 20px;
+            margin-top: 20px;
         }
 
-        h2 {
-            width: 200px;
+        #vehiculos {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px;
+
+            h2 {
+                font-size: 15px;
+                height: 80px;
+            }
+
+            .viaCargo,
+            .moto {
+                width: 280px;
+                height: 260px;
+
+                img {
+                    width: 250px;
+                    height: 180px;
+                }
+            }
         }
     }
-
-    #vehiculos h2 {
-        font-size: 10px;
-    }
-
-
 
 
 
     /*PICKUP*/
 
-    .mainPickup_mapas {
-        flex-wrap: wrap;
-        width: 80vw;
-        font-size: 10px;
-        justify-content: center;
+    #mainPickup {
+        .mainPickup_h1 {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        .mainPickup_mapas {
+            flex-wrap: wrap;
+            width: 80vw;
+            font-size: 10px;
+            justify-content: center;
+        }
+
+        .card .ubi {
+            justify-content: center;
+        }
     }
 
-    .card .ubi {
-        justify-content: center;
-    }
 
-    .mapas img {
-        width: 200px;
-    }
+
+
+
 
     /*CONTACTO*/
 
-
     #mainContacto {
         h1 {
+            font-size: 30px;
+        }
+
+        h2 {
             font-size: 20px;
         }
 
-        h2 {
-            font-size: 15px;
-            width: 250px;
-        }
-    }
-
-
-
-    .redesSociales {
-        font-size: 10px;
-        width: 250px;
-
-        img {
-            width: 70px;
-            height: 70px;
-        }
-    }
-
-
-    /*-----FORM----*/
-
-    #formContacto {
-        width: 250px;
-        justify-content: center;
-
-        h2 {
-            font-size: 10px;
-            text-align: center;
-            width: 180px;
-            align-items: center;
+        #formContacto {
+            width: 500px;
             justify-content: center;
-        }
-
-        .inputEmail,
-        .inputNombre,
-        .inputApellido {
-            width: 180px;
-            height: 40px;
-        }
-
-        .nombre,
-        .apellido,
-        .email {
-            height: 50px;
-        }
-
-        .cajaMsj {
-            height: 500px;
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
 
-        }
+            .redesSociales {
+                flex-wrap: wrap;
 
-        .textoConsulta {
-            width: 180px;
-            font-size: 10px;
-            height: 100px;
-            justify-content: center;
-            align-items: center;
-            margin-top: 50px;
+                .wp,
+                .ig {
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    justify-content: center;
+                    align-items: center;
 
-        }
+                    p {
+                        font-size: 10px;
+                        width: 250px;
+                    }
 
-        .write {
-            width: 200px;
+                    img {
+                        width: 100px;
+                        height: 100px;
+                    }
+                }
 
-            h2 {
-                font-size: 5px;
-                width: 180px;
+
+            }
+
+            .cajaMsj {
+                height: 500px;
+                width: 350px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .datosPersonales {
+                    height: 200px;
+                    flex-wrap: wrap;
+                }
+
+                .textoConsulta {
+                    width: 280px;
+                    justify-content: center;
+
+                    h2{
+                        font-size: 15px;
+                        margin-top: 10px;
+                    }
+
+                    .textareaText textarea {
+                        width: 250px;
+                    }
+
+                }
+
+                .botones input {
+                    font-size: 15px;
+                }
             }
         }
 
-
-        .textareaText textarea {
-            width: 160px;
-            height: 100px;
-        }
-
-
     }
-
 
 
 
 
 
     /*FOOTER*/
-    #redes img {
-        width: 30px;
-        height: 30px;
-        margin: 5px;
+
+    #redes .redesBox .imgFooter img {
+        width: 10vw;
+        height: 10vw;
+
     }
 
 }
