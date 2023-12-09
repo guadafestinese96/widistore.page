@@ -160,14 +160,18 @@ main {
 
 
     /*PICKUP*/
-    .mainPickup_h1 {
-        font-size: 30px;
-        margin-top: 20px;
+    #mainPickup {
+        .mainPickup_h1 {
+            font-size: 30px;
+            margin-top: 20px;
+        }
+
+        .mainPickup_mapas {
+            flex-wrap: wrap;
+        }
+
     }
 
-    .mainPickup_mapas {
-        flex-wrap: wrap;
-    }
 
 
 
@@ -437,7 +441,7 @@ main {
                     width: 280px;
                     justify-content: center;
 
-                    h2{
+                    h2 {
                         font-size: 15px;
                         margin-top: 10px;
                     }

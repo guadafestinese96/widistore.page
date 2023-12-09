@@ -588,11 +588,11 @@ main {
     height: 80px;
   }
   /*PICKUP*/
-  .mainPickup_h1 {
+  #mainPickup .mainPickup_h1 {
     font-size: 30px;
     margin-top: 20px;
   }
-  .mainPickup_mapas {
+  #mainPickup .mainPickup_mapas {
     flex-wrap: wrap;
   }
   /*CONTACTO*/
