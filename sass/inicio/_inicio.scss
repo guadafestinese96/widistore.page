@@ -219,7 +219,7 @@ main {
 
                 }
 
-                .botones input {
+                .botones {
                     font-size: 15px;
                 }
             }
@@ -452,16 +452,26 @@ main {
 
                 }
 
-                .botones input {
-                    font-size: 15px;
+                .botones {
+                    margin-left: 80px;
+                    
+                    input {
+                        font-size: 15px;
+                        padding: 10px;
+                        background-color: #ffffff;
+                        color: #000000;
+                        border: 2px solid black;
+                    }
+
+                    input:hover {
+                        background-color: #000000;
+                        color: #ffffff;
+                    }
                 }
             }
         }
 
     }
-
-
-
 
 
     /*FOOTER*/

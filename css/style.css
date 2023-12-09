@@ -157,35 +157,34 @@ Le puedo dar propiedades y aparte el extend*/
   width: 400px;
   margin: 20px;
 }
-
-.cajaMsj {
+#mainContacto .cajaMsj {
   background-color: #ff13a7;
   padding: 20px;
   border: #000000 solid 2px;
   margin: 20px;
 }
-.cajaMsj .datosPersonales {
+#mainContacto .cajaMsj .datosPersonales {
   height: 100px;
   display: flex;
   gap: 10px;
   justify-content: center;
 }
-.cajaMsj .datosPersonales .nombre {
+#mainContacto .cajaMsj .datosPersonales .nombre {
   display: flex;
   flex-direction: column;
 }
-.cajaMsj .datosPersonales input {
+#mainContacto .cajaMsj .datosPersonales input {
   height: 40px;
   padding: 5px;
 }
-.cajaMsj .datosPersonales .inputNombre,
-.cajaMsj .datosPersonales .inputApellido {
+#mainContacto .cajaMsj .datosPersonales .inputNombre,
+#mainContacto .cajaMsj .datosPersonales .inputApellido {
   width: 180px;
 }
-.cajaMsj .datosPersonales .inputEmail {
+#mainContacto .cajaMsj .datosPersonales .inputEmail {
   width: 280px;
 }
-.cajaMsj .datosPersonales .textoConsulta {
+#mainContacto .cajaMsj .datosPersonales .textoConsulta {
   width: 700px;
   padding: 30px;
   justify-content: center;
@@ -193,25 +192,25 @@ Le puedo dar propiedades y aparte el extend*/
   display: flex;
   flex-direction: column;
 }
-.cajaMsj .datosPersonales .textoConsulta textarea {
+#mainContacto .cajaMsj .datosPersonales .textoConsulta textarea {
   margin-left: 20px;
   resize: none;
   padding: 10px;
   font-size: 15px;
 }
-.cajaMsj .datosPersonales .write {
+#mainContacto .cajaMsj .datosPersonales .write {
   padding: 10px;
 }
-.cajaMsj .botones {
+#mainContacto .cajaMsj .botones {
   text-align: right;
   margin-right: 25px;
 }
-.cajaMsj .botones input {
+#mainContacto .cajaMsj .botones input {
   font-size: 20px;
   padding: 10px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
-.cajaMsj .botones input:hover {
+#mainContacto .cajaMsj .botones input:hover {
   background-color: #000000;
   color: #ffffff;
 }
@@ -399,6 +398,15 @@ Le puedo dar propiedades y aparte el extend*/
   gap: 10px;
   grid-template-areas: "pacoRabanne dior calvinKlein azzaro ch kenzo" "mugler miyake creed tommy tomFord dolceGabbana" "versace armani ralphLauren bvlgary vacio vacio";
   margin: 20px;
+}
+#tablaStockMasculino .caja {
+  background-color: #ffffff;
+  border: #000000 solid 2px;
+  padding: 10px;
+  width: 150px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 }
 #tablaStockMasculino .tablaStockMasculino_h2 {
   background-color: #ff13a7;
@@ -628,7 +636,7 @@ main {
   #mainContacto #formContacto .cajaMsj .textoConsulta .textareaText textarea {
     width: 350px;
   }
-  #mainContacto #formContacto .cajaMsj .botones input {
+  #mainContacto #formContacto .cajaMsj .botones {
     font-size: 15px;
   }
 }
@@ -789,8 +797,19 @@ main {
   #mainContacto #formContacto .cajaMsj .textoConsulta .textareaText textarea {
     width: 250px;
   }
+  #mainContacto #formContacto .cajaMsj .botones {
+    margin-left: 80px;
+  }
   #mainContacto #formContacto .cajaMsj .botones input {
     font-size: 15px;
+    padding: 10px;
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid black;
+  }
+  #mainContacto #formContacto .cajaMsj .botones input:hover {
+    background-color: #000000;
+    color: #ffffff;
   }
   /*FOOTER*/
   #redes .redesBox .imgFooter img {
