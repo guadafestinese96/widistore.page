@@ -338,10 +338,7 @@ main {
             flex-wrap: wrap;
             margin: 20px;
 
-            h2 {
-                font-size: 15px;
-                height: 80px;
-            }
+
 
             .viaCargo,
             .moto {
@@ -351,6 +348,12 @@ main {
                 img {
                     width: 250px;
                     height: 180px;
+                }
+
+                h2 {
+                    font-size: 15px;
+                    height: 80px;
+                    width: 270px;
                 }
             }
         }

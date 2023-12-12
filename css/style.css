@@ -721,10 +721,6 @@ main {
     flex-wrap: wrap;
     margin: 20px;
   }
-  #mainEnvios #vehiculos h2 {
-    font-size: 15px;
-    height: 80px;
-  }
   #mainEnvios #vehiculos .viaCargo,
   #mainEnvios #vehiculos .moto {
     width: 280px;
@@ -734,6 +730,12 @@ main {
   #mainEnvios #vehiculos .moto img {
     width: 250px;
     height: 180px;
+  }
+  #mainEnvios #vehiculos .viaCargo h2,
+  #mainEnvios #vehiculos .moto h2 {
+    font-size: 15px;
+    height: 80px;
+    width: 270px;
   }
   /*PICKUP*/
   #mainPickup .mainPickup_h1 {
