@@ -1,9 +1,9 @@
 header {
-    background-color:rgb(255 19 167 / 95%);
+    background-color: rgb(255 19 167 / 95%);
     height: 150px;
     display: flex;
     position: sticky;
-    top: 0px;
+    top: 0;
     justify-content: center;
     z-index: 100;
 }
@@ -27,15 +27,12 @@ header {
     ul li {
         display: inline-block;
 
-
-
         a {
             font-size: 25px;
             margin-left: 10px;
             text-decoration: none;
             color: #000000;
             text-shadow: #ffffff 5px 5px 5px;
-            /*-----------color -- derecha -- abajo -- transparencia */
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             transition: .5s;
 
@@ -44,7 +41,6 @@ header {
 
         a:hover {
             color: #ffffff;
-            /*LE CAMBIO EL COLOR A LA LETRA CUANDO ME POSICIONO ARRIBA*/
             text-shadow: #000000 5px 5px 5px;
             transition: .5s;
             font-size: 30px;
@@ -52,10 +48,3 @@ header {
     }
 }
 
-
-
-
-
-
-
-/*------------------------------------------*/

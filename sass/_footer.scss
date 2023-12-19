@@ -1,9 +1,4 @@
-/*----------------------FOOTER-------------*/
 
-
-
-
-/*NO PONER POSICIONAMIENTO RELATIVO O ABSOLUTO*/
 #redes {
     display: flex;
     justify-content: center;
@@ -23,35 +18,27 @@
                 border-radius: 15px;
                 margin: 15px;
             }
-            
+
         }
     }
 }
 
-.wpFooter img:hover{
-    box-shadow:  5px 5px 5px rgba(0, 0, 0, 1);
+.wpFooter img:hover {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 1);
     transition: 0.5s;
-    /*PRIMER VALOR EJE X Y SEGUNDO VALOR EJE Y
-    VALORES POSITIVOS: DERECHA ABAJO
-    VALORES NEGATIVOS: ARRIBA IZQUIERDA*/
     transform: translate(-5px, -5px);
 }
 
-.igFooter img:hover{
-    box-shadow:  5px 5px 5px rgba(0, 0, 0, 1);
+.igFooter img:hover {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 1);
     transition: 0.5s;
     transform: translate(-5px, -5px);
-    //transform: rotate(360deg);
-    //transform: rotateX(360deg); rotateY(50deg) rotateZ(50deg)
-    //transform: scale(ejeX ejeY) scale(2,2)
-    //transform: skew() -->torcer el elemento
+ 
 }
 
-.ubiFooter img:hover{
-    box-shadow:  5px 5px 5px rgba(0, 0, 0, 1);
+.ubiFooter img:hover {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 1);
     transition: 0.5s;
     transform: translate(-5px, -5px);
-}   
+}
 
-//transform: scale(1.2, 1.2);
-//filter: drop-shadow(5px 5px 4px #111111); con esto agrando la imagen y le pongo una sombra

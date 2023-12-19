@@ -1,7 +1,6 @@
 main {
 
     min-height: 100vh;
-    /*para que siempre el footer este abajo*/
     display: flex;
     background-color: #000000;
     background-image: url(../images/fotoperfumes3.jpg);
@@ -51,20 +50,9 @@ main {
 
 
 
-/*----------------------------------------------------------------------------*/
-
-
-
-
-
-
-
-
-/*--------------MEDIA QUERIS-------------*/
-
 @media screen and (min-width: 501px) and (max-width: 880px) {
 
-    /*ENCABEZADO*/
+    
     #navBar {
 
         img {
@@ -83,7 +71,6 @@ main {
     }
 
 
-    /*TITULOS INICIO*/
 
 
     #centro .banner_titulo {
@@ -105,7 +92,7 @@ main {
 
     }
 
-    /*STOCK FEMENINO*/
+    
     #mainStockFemenino {
         flex-wrap: wrap;
         justify-content: center;
@@ -122,7 +109,7 @@ main {
         justify-content: center;
     }
 
-    /*STOCK MASCULINO*/
+    
     #mainStockMasculino {
         flex-wrap: wrap;
 
@@ -139,7 +126,7 @@ main {
         justify-content: center;
     }
 
-    /*ENVIOS*/
+   
     #mainEnvios {
         h1 {
             font-size: 30px;
@@ -161,7 +148,7 @@ main {
 
 
 
-    /*PICKUP*/
+    
     #mainPickup {
         .mainPickup_h1 {
             font-size: 30px;
@@ -176,8 +163,6 @@ main {
 
 
 
-
-    /*CONTACTO*/
 
     #mainContacto {
         h1 {
@@ -232,12 +217,12 @@ main {
 }
 
 
+
+
 @media screen and (min-width: 320px) and (max-width: 500px) {
 
-    /*ENCABEZADO*/
-
     header {
-        height: 250px;
+        height: 180px;
     }
 
     #navBar {
@@ -250,7 +235,7 @@ main {
 
         ul li {
             a {
-                font-size: 10px;
+                font-size: 15px;
 
             }
 
@@ -262,22 +247,20 @@ main {
     }
 
 
-
-    /*TITULOS INICIO*/
     #centro .banner_titulo {
 
         h2 {
-            font-size: 35px;
+            font-size: 30px;
             width: 200px;
         }
 
         h3 {
-            font-size: 20px;
+            font-size: 18px;
             width: 200px;
         }
     }
 
-    /*STOCK FEMENINO*/
+   
     #mainStockFemenino {
         h1 {
             font-size: 20px;
@@ -301,7 +284,6 @@ main {
         }
     }
 
-    /*STOCK MASCULINO*/
     #mainStockMasculino {
         h1 {
             font-size: 20px;
@@ -312,7 +294,7 @@ main {
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin: 0px;
+            margin: 0;
             gap: 10px;
 
             .caja {
@@ -325,7 +307,6 @@ main {
         }
     }
 
-    /*ENVIOS*/
 
     #mainEnvios {
         h1 {
@@ -361,8 +342,6 @@ main {
 
 
 
-    /*PICKUP*/
-
     #mainPickup {
         .mainPickup_h1 {
             font-size: 20px;
@@ -383,11 +362,6 @@ main {
 
 
 
-
-
-
-    /*CONTACTO*/
-
     #mainContacto {
         h1 {
             font-size: 30px;
@@ -398,7 +372,7 @@ main {
         }
 
         #formContacto {
-            width: 500px;
+            width: 320px;
             justify-content: center;
             display: flex;
             flex-direction: column;
@@ -406,6 +380,8 @@ main {
 
             .redesSociales {
                 flex-wrap: wrap;
+                width: 320px;
+             
 
                 .wp,
                 .ig {
@@ -431,7 +407,7 @@ main {
 
             .cajaMsj {
                 height: 500px;
-                width: 350px;
+                width: 300px;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -479,8 +455,6 @@ main {
     }
 
 
-    /*FOOTER*/
-
     #redes .redesBox .imgFooter img {
         width: 10vw;
         height: 10vw;
@@ -489,16 +463,3 @@ main {
 
 }
 
-/*
-.footerLinks ul li:nth-child(3) a:hover
---> Entro a la lista de los links y selecciono solo el tercer link para modificarle una propiedad
-
-CDN 
---> link a boostrap lo copio y lo pego en mi head
---> del body copio el script de javascript y lo pego en el final mi body. Si lo pego en el head me va a sobrecargar el sitio. Todas las librerias que cargue las tengo que cargar antes de el link a mi hoja de estilos CSS porque sino la pisan.
-
-LIBRERIA HOVER IMG
-link rel="stylesheet" href:"https://cdnjs.cloudflare.com/ajax/libs/imagehover.css/2.0.0/css/imagehover.min.css"
-
-Uso boostrap solo si necesito algo que no tenga que modificar, puedo implementar solo un boton en el trabajo pre entregable.
-*/
