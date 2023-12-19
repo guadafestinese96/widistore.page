@@ -631,7 +631,10 @@ main {
     font-size: 15px;
   }
   #navBar ul li a:hover, #navBar ul li li:hover {
-    font-size: 15px;
+    color: #ffffff;
+    text-shadow: #000000 5px 5px 5px;
+    transition: 0.5s;
+    font-size: 20px;
   }
   #centro .banner_titulo h2 {
     font-size: 30px;
