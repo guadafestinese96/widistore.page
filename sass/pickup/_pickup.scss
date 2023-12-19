@@ -1,22 +1,17 @@
-/*--------------------PICKUP-----------------------------------------------------*/
 
 #mainPickup {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    
     .mainPickup_h1 {
         font-size: 50px;
         margin-bottom: 20px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-weight: bold;
     }
-
     .mainPickup_mapas {
         display: flex;
         justify-content: center;
-        
-
         .ubi {
             width: 500px;
             margin: 20px;
@@ -25,10 +20,15 @@
 }
 
 
+.btn-primary{
+    background-color: #ff13a7;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+}
+
+.btn-primary:hover{
+    background-color: black;
+    color:#ff13a7;
+}
 
 
-
-
-
-/*------------- FIN PICKUP-------------------*/
-/*----------------------------------------------------------------------------*/

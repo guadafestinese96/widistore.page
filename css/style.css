@@ -237,7 +237,6 @@ a, li {
   padding: 10px;
 }
 
-/*--------------------PICKUP-----------------------------------------------------*/
 #mainPickup {
   display: flex;
   justify-content: center;
@@ -258,8 +257,17 @@ a, li {
   margin: 20px;
 }
 
-/*------------- FIN PICKUP-------------------*/
-/*----------------------------------------------------------------------------*/
+.btn-primary {
+  background-color: #ff13a7;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: black;
+}
+
+.btn-primary:hover {
+  background-color: black;
+  color: #ff13a7;
+}
+
 #mainStockFemenino {
   display: flex;
   align-items: center;
