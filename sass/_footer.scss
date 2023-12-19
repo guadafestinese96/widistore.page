@@ -1,16 +1,13 @@
-
 #redes {
     display: flex;
     justify-content: center;
     text-align: left;
     background-color: #F4EDEB;
     margin-top: auto;
-
     .redesBox {
         display: flex;
         justify-content: left;
         margin-left: 10px;
-
         .imgFooter {
             img {
                 width: 80px;
@@ -18,24 +15,19 @@
                 border-radius: 15px;
                 margin: 15px;
             }
-
         }
     }
 }
-
 .wpFooter img:hover {
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 1);
     transition: 0.5s;
     transform: translate(-5px, -5px);
 }
-
 .igFooter img:hover {
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 1);
     transition: 0.5s;
     transform: translate(-5px, -5px);
- 
 }
-
 .ubiFooter img:hover {
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 1);
     transition: 0.5s;

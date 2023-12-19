@@ -1,18 +1,14 @@
-
 #mainStockFemenino {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
     h1 {
         margin-top: 10px;
         font-size: 50px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
-
 }
-
 #tablaStockFemenino {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -24,8 +20,6 @@
         "jesusDelPozo armani moschino givenchy vacio vacio"
     ;
     margin: 20px;
-
-
     h2 {
         background-color: #ff13a7;
         padding: 5px;
@@ -35,18 +29,13 @@
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
     }
-
     h3 {
         background-color: #ffffff;
         padding: 5px;
         font-size: 15px;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
-
 }
-
-
-
 .caja {
     background-color: #ffffff;
     border: #000000 solid 2px;
@@ -56,65 +45,48 @@
     text-align: center;
     justify-content: center;
 }
-
-
 .pacoRabanne {
     grid-area: pacoRabanne;
 }
-
 .dior {
     grid-area: dior;
 }
-
 .calvinKlein {
     grid-area: calvinKlein;
 }
-
 .azzaro {
     grid-area: azzaro;
 }
-
 .ch {
     grid-area: ch;
 }
-
 .kenzo {
     grid-area: kenzo;
 }
-
 .mugler {
     grid-area: mugler;
 }
-
 .miyake {
     grid-area: miyake;
 }
-
-
 .lancome {
     grid-area: lancome;
 }
-
 .tommy {
     grid-area: tommy;
 }
-
 .dolceGabbana {
     grid-area: dolceGabbana;
 }
-
 .jesusDelPozo {
     grid-area: jesusDelPozo;
 }
-
 .armani {
     grid-area: armani;
 }
-
 .moschino {
     grid-area: moschino;
 }
-
 .givenchy {
     grid-area: givenchy;
 }

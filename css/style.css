@@ -261,11 +261,13 @@ a, li {
   background-color: #ff13a7;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   color: black;
+  border-color: black;
 }
 
 .btn-primary:hover {
   background-color: black;
   color: #ff13a7;
+  border-color: #ff13a7;
 }
 
 #mainStockFemenino {
@@ -373,7 +375,6 @@ a, li {
   grid-area: givenchy;
 }
 
-/*-----------------STOCK MASCULINO--------------------*/
 #mainStockMasculino {
   display: flex;
   align-items: center;
@@ -418,7 +419,6 @@ a, li {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/*AREAS DEL GRID*/
 .pacoRabanne {
   grid-area: pacoRabanne;
 }
@@ -483,7 +483,6 @@ a, li {
   grid-area: bvlgary;
 }
 
-/*------------- FIN STOCK MASCULINO-------------------*/
 main {
   min-height: 100vh;
   display: flex;

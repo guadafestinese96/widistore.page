@@ -18,17 +18,16 @@
         }
     }
 }
-
-
 .btn-primary{
     background-color: #ff13a7;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: black;
+    border-color: black;
 }
-
 .btn-primary:hover{
     background-color: black;
     color:#ff13a7;
+    border-color: #ff13a7;
 }
 
 
