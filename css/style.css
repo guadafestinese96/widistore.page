@@ -104,7 +104,7 @@ a, li {
   justify-content: center;
 }
 #mainContacto h1 {
-  font-size: 50px;
+  font-size: 40px;
   margin: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -219,14 +219,14 @@ a, li {
   flex-direction: column;
 }
 #mainEnvios h1 {
-  font-size: 50px;
-  margin-bottom: 20px;
+  font-size: 40px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #mainEnvios #vehiculos {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 10px;
 }
 #mainEnvios #vehiculos .moto,
 #mainEnvios #vehiculos .viaCargo {
@@ -258,8 +258,8 @@ a, li {
   flex-direction: column;
 }
 #mainPickup .mainPickup_h1 {
-  font-size: 50px;
-  margin-bottom: 20px;
+  font-size: 40px;
+  margin-bottom: 10px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
 }
@@ -293,7 +293,7 @@ a, li {
 }
 #mainStockFemenino h1 {
   margin-top: 10px;
-  font-size: 50px;
+  font-size: 40px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -398,7 +398,7 @@ a, li {
 }
 #mainStockMasculino h1 {
   margin-top: 20px;
-  font-size: 50px;
+  font-size: 40px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -511,12 +511,11 @@ main {
 
 #centro h1 {
   font-size: 30px;
-  margin-bottom: 50px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 #centro .banner_titulo h2 {
   color: #000000;
-  font-size: 60px;
+  font-size: 40px;
   text-shadow: #ff13a7 1px 5px 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
