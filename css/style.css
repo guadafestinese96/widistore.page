@@ -128,18 +128,33 @@ a, li {
   padding: 10px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
-  height: 60px;
-  border-radius: 40px;
+  height: 80px;
 }
 #mainContacto #formContacto .redesSociales img {
-  width: 200px;
-  height: 200px;
+  width: 120px;
+  height: 120px;
   margin: 10px;
 }
 #mainContacto #formContacto .redesSociales .wp,
 #mainContacto #formContacto .redesSociales .ig {
   width: 400px;
   padding: 20px;
+}
+#mainContacto #formContacto .redesSociales .wp input,
+#mainContacto #formContacto .redesSociales .ig input {
+  background-color: #000000;
+  color: white;
+  padding: 5px;
+  margin: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+#mainContacto #formContacto .redesSociales .wp input:hover,
+#mainContacto #formContacto .redesSociales .ig input:hover {
+  background-color: white;
+  color: black;
+  padding: 5px;
+  margin: 5px;
 }
 #mainContacto .cajaMsj {
   background-color: #ff13a7;
@@ -285,9 +300,9 @@ a, li {
 #tablaStockFemenino {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: 10px;
-  grid-template-areas: "pacoRabanne dior calvinKlein azzaro ch kenzo" "mugler miyake lancome tommy yves dolceGabbana" "jesusDelPozo armani moschino givenchy vacio vacio";
+  grid-template-areas: "pacoRabanne dior calvinKlein azzaro ch kenzo jesusDelPozo armani" "mugler miyake lancome tommy yves dolceGabbana moschino givenchy";
   margin: 20px;
 }
 #tablaStockFemenino h2 {
@@ -390,9 +405,9 @@ a, li {
 #tablaStockMasculino {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: 10px;
-  grid-template-areas: "pacoRabanne dior calvinKlein azzaro ch kenzo" "mugler miyake creed tommy tomFord dolceGabbana" "versace armani ralphLauren bvlgary vacio vacio";
+  grid-template-areas: "pacoRabanne dior calvinKlein azzaro ch kenzo versace armani" "mugler miyake creed tommy tomFord dolceGabbana ralphLauren bvlgary";
   margin: 20px;
 }
 #tablaStockMasculino .caja {

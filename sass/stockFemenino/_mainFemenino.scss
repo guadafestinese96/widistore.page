@@ -12,12 +12,11 @@
 #tablaStockFemenino {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 10px;
     grid-template-areas:
-        "pacoRabanne dior calvinKlein azzaro ch kenzo"
-        "mugler miyake lancome tommy yves dolceGabbana"
-        "jesusDelPozo armani moschino givenchy vacio vacio"
+        "pacoRabanne dior calvinKlein azzaro ch kenzo jesusDelPozo armani"
+        "mugler miyake lancome tommy yves dolceGabbana moschino givenchy"
     ;
     margin: 20px;
     h2 {

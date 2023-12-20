@@ -12,12 +12,11 @@
 #tablaStockMasculino {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 10px;
     grid-template-areas:
-        "pacoRabanne dior calvinKlein azzaro ch kenzo"
-        "mugler miyake creed tommy tomFord dolceGabbana"
-        "versace armani ralphLauren bvlgary vacio vacio"
+        "pacoRabanne dior calvinKlein azzaro ch kenzo versace armani"
+        "mugler miyake creed tommy tomFord dolceGabbana ralphLauren bvlgary"
     ;
     margin: 20px;
     .caja {
