@@ -200,9 +200,6 @@ a, li {
   padding: 10px;
   font-size: 15px;
 }
-#mainContacto .cajaMsj .datosPersonales .write {
-  padding: 10px;
-}
 #mainContacto .cajaMsj .botones {
   text-align: right;
   margin-right: 25px;
@@ -792,33 +789,36 @@ main {
   }
   #mainContacto #formContacto .cajaMsj .textoConsulta {
     width: 280px;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   #mainContacto #formContacto .cajaMsj .textoConsulta h2 {
     font-size: 15px;
     margin-top: 10px;
+    width: 250px;
   }
   #mainContacto #formContacto .cajaMsj .textoConsulta .textareaText textarea {
     width: 250px;
   }
-  #mainContacto #formContacto .cajaMsj .botones {
+  #mainContacto #formContacto .botones {
     margin-left: 80px;
   }
-  #mainContacto #formContacto .cajaMsj .botones input {
+  #mainContacto #formContacto .botones input {
     font-size: 15px;
     padding: 10px;
     background-color: #ffffff;
     color: #000000;
     border: 2px solid black;
   }
-  #mainContacto #formContacto .cajaMsj .botones input:hover {
+  #mainContacto #formContacto .botones input:hover {
     background-color: #000000;
     color: #ffffff;
   }
-  #redes .redesBox .imgFooter img {
-    width: 10vw;
-    height: 10vw;
-  }
+}
+#redes .redesBox .imgFooter img {
+  width: 10vw;
+  height: 10vw;
 }
 
 /*# sourceMappingURL=style.css.map */
