@@ -13,8 +13,8 @@ header {
     align-items: center;
     width: 100%;
     img {
-        width: 120px;
-        height: 120px;
+        width: 100px;
+        height: 100px;
         border-radius: 100%;
         margin: 10px;
         border: 1px solid #000000;
@@ -23,7 +23,7 @@ header {
     ul li {
         display: inline-block;
         a {
-            font-size: 25px;
+            font-size: 20px;
             margin-left: 10px;
             text-decoration: none;
             color: #000000;
@@ -35,7 +35,7 @@ header {
             color: #ffffff;
             text-shadow: #000000 5px 5px 5px;
             transition: .5s;
-            font-size: 30px;
+            font-size: 23px;
         }
     }
 }

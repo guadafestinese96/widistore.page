@@ -52,8 +52,8 @@ header {
   width: 100%;
 }
 #navBar img {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   border-radius: 100%;
   margin: 10px;
   border: 1px solid #000000;
@@ -63,7 +63,7 @@ header {
   display: inline-block;
 }
 #navBar ul li a, #navBar ul li li {
-  font-size: 25px;
+  font-size: 20px;
   margin-left: 10px;
   text-decoration: none;
   color: #000000;
@@ -75,7 +75,7 @@ header {
   color: #ffffff;
   text-shadow: #000000 5px 5px 5px;
   transition: 0.5s;
-  font-size: 30px;
+  font-size: 23px;
 }
 
 * {
@@ -511,6 +511,7 @@ main {
 
 #centro h1 {
   font-size: 30px;
+  margin-bottom: 20px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 #centro .banner_titulo h2 {
