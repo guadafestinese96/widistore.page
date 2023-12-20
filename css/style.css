@@ -754,7 +754,7 @@ main {
   }
   #mainContacto #formContacto .redesSociales {
     flex-wrap: wrap;
-    width: 320px;
+    width: 300px;
   }
   #mainContacto #formContacto .redesSociales .wp,
   #mainContacto #formContacto .redesSociales .ig {
