@@ -108,6 +108,9 @@ a, li {
   margin: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+#mainContacto h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 #mainContacto #formContacto {
   display: flex;
   width: 800px;
