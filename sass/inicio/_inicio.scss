@@ -315,7 +315,7 @@ main {
                 }
                 .textoConsulta {
                     width: 280px;
-                    justify-content: center;
+                    flex-wrap: wrap;
                     h2 {
                         font-size: 15px;
                         margin-top: 10px;
@@ -323,7 +323,8 @@ main {
                     .textareaText textarea {
                         width: 250px;
                     }
-                }
+                }//text consulta
+            }//cajamsj
                 .botones {
                     margin-left: 80px;
                     input {
@@ -337,13 +338,13 @@ main {
                         background-color: #000000;
                         color: #ffffff;
                     }
-                }
-            }
-        }
-    }
+                }//botones
+            } //cajamsj
+        }//formcont
+    }//maincont
     #redes .redesBox .imgFooter img {
         width: 10vw;
         height: 10vw;
     }
-}
+
 
