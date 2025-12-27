@@ -20,7 +20,8 @@ Consiste en la construcción de un sitio web estático aplicando buenas práctic
 
 ## Cómo visualizar
 1. Clonar el repositorio:
+   ```bash
    git clone https://github.com/guadafestinese96/widistore.page.git
-2. Abrir el archivo index.html en el navegador.
+3. Abrir el archivo index.html en el navegador.
    
 Autor: Guadalupe Festinese – Proyecto académico realizado en Coderhouse.
